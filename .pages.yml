@@ -2,149 +2,1149 @@ media:
   label: 商品照片
   input: img/products
   output: /img/products
-  extensions: [svg, jpg, jpeg, png, webp, gif]
-
+  extensions:
+  - svg
+  - jpg
+  - jpeg
+  - png
+  - webp
+  - gif
 content:
-  - name: products
-    label: 商品
-    type: file
-    path: content/products.json
-    format: json
+- name: products-bmw
+  label: 商品｜BMW
+  type: file
+  path: content/products/bmw.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: bmw
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
     list: true
-    fields:
-      - name: id
-        label: 編號
-        type: string
-        description: 既有商品請保留編號。
-      - name: name
-        label: 品名
-        type: string
-        required: true
-      - name: brand
-        label: 品牌
-        type: select
-        required: true
-        options:
-          values:
-            - name: bmw
-              label: BMW
-            - name: benz
-              label: Mercedes-Benz
-            - name: audi
-              label: Audi
-            - name: porsche
-              label: Porsche
-            - name: vw
-              label: Volkswagen
-            - name: toyota
-              label: Toyota
-            - name: lexus
-              label: Lexus
-            - name: honda
-              label: Honda
-            - name: ferrari
-              label: Ferrari
-            - name: lamborghini
-              label: Lamborghini
-      - name: model
-        label: 車型
-        type: string
-        description: 例如 3系列 G20。
-      - name: category
-        label: 類別
-        type: select
-        required: true
-        options:
-          values:
-            - name: paddle
-              label: 撥片
-            - name: exhaust
-              label: 排氣管
-            - name: suspension
-              label: "避震 / 懸吊"
-            - name: wheel
-              label: 輪圈
-            - name: brake
-              label: 煞車
-            - name: intake
-              label: 進氣
-            - name: aero
-              label: 外觀套件
-            - name: interior
-              label: 內裝
-            - name: tuning
-              label: 電腦調校 / 改裝服務
-      - name: price
-        label: 價格
-        type: number
-        description: 可留空。
-        options:
-          min: 0
-      - name: description
-        label: 說明
-        type: text
-      - name: images
-        label: 照片
-        type: image
-        list: true
-        options:
-          extensions: [svg, jpg, jpeg, png, webp, gif]
-      - name: featured
-        label: 熱銷精選
-        type: boolean
-        default: false
-      - name: published
-        label: 上架
-        type: boolean
-        default: true
-
-  - name: site
-    label: 網站內容
-    type: file
-    path: content/site.json
-    format: json
-    fields:
-      - name: lineUrl
-        label: LINE 連結
-        type: string
-        required: true
-      - name: heroTitle
-        label: 首頁標題
-        type: string
-      - name: heroHighlight
-        label: 首頁強調句
-        type: string
-      - name: heroSubtitle
-        label: 首頁副標
-        type: text
-      - name: aboutText
-        label: 關於我們內文
-        type: text
-      - name: name
-        label: 店名
-        type: string
-      - name: nameEn
-        label: 英文店名
-        type: string
-      - name: address
-        label: 地址
-        type: string
-      - name: phone
-        label: 電話
-        type: string
-      - name: tel
-        label: 電話連結
-        type: string
-        description: 例如 +88652385510。
-      - name: hours
-        label: 營業時間
-        type: string
-      - name: instagram
-        label: Instagram 連結
-        type: string
-      - name: ig
-        label: Instagram 帳號
-        type: string
-      - name: intro
-        label: 簡介
-        type: text
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-benz
+  label: 商品｜Benz
+  type: file
+  path: content/products/benz.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: benz
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-audi
+  label: 商品｜Audi
+  type: file
+  path: content/products/audi.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: audi
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-porsche
+  label: 商品｜Porsche
+  type: file
+  path: content/products/porsche.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: porsche
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-vw
+  label: 商品｜VW
+  type: file
+  path: content/products/vw.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: vw
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-toyota
+  label: 商品｜Toyota
+  type: file
+  path: content/products/toyota.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: toyota
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-lexus
+  label: 商品｜Lexus
+  type: file
+  path: content/products/lexus.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: lexus
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-honda
+  label: 商品｜Honda
+  type: file
+  path: content/products/honda.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: honda
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-ferrari
+  label: 商品｜Ferrari
+  type: file
+  path: content/products/ferrari.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: ferrari
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-lamborghini
+  label: 商品｜Lamborghini
+  type: file
+  path: content/products/lamborghini.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+    default: lamborghini
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: products-other
+  label: 商品｜其他
+  type: file
+  path: content/products/other.json
+  format: json
+  list: true
+  fields:
+  - description: 既有商品請保留編號。
+    label: 編號
+    name: id
+    type: string
+  - label: 品名
+    name: name
+    required: true
+    type: string
+  - label: 品牌
+    name: brand
+    options:
+      values:
+      - label: BMW
+        name: bmw
+      - label: Mercedes-Benz
+        name: benz
+      - label: Audi
+        name: audi
+      - label: Porsche
+        name: porsche
+      - label: Volkswagen
+        name: vw
+      - label: Toyota
+        name: toyota
+      - label: Lexus
+        name: lexus
+      - label: Honda
+        name: honda
+      - label: Ferrari
+        name: ferrari
+      - label: Lamborghini
+        name: lamborghini
+    required: true
+    type: select
+  - description: 例如 3系列 G20。
+    label: 車型
+    name: model
+    type: string
+  - label: 類別
+    name: category
+    options:
+      values:
+      - label: 撥片
+        name: paddle
+      - label: 排氣管
+        name: exhaust
+      - label: 避震 / 懸吊
+        name: suspension
+      - label: 輪圈
+        name: wheel
+      - label: 煞車
+        name: brake
+      - label: 進氣
+        name: intake
+      - label: 外觀套件
+        name: aero
+      - label: 內裝
+        name: interior
+      - label: 電腦調校 / 改裝服務
+        name: tuning
+    required: true
+    type: select
+  - description: 可留空。
+    label: 價格
+    name: price
+    options:
+      min: 0
+    type: number
+  - label: 說明
+    name: description
+    type: text
+  - label: 照片
+    list: true
+    name: images
+    options:
+      extensions:
+      - svg
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+    type: image
+  - default: false
+    label: 熱銷精選
+    name: featured
+    type: boolean
+  - default: true
+    label: 上架
+    name: published
+    type: boolean
+- name: site
+  label: 網站內容
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: lineUrl
+    label: LINE 連結
+    type: string
+    required: true
+  - name: heroTitle
+    label: 首頁標題
+    type: string
+  - name: heroHighlight
+    label: 首頁強調句
+    type: string
+  - name: heroSubtitle
+    label: 首頁副標
+    type: text
+  - name: aboutText
+    label: 關於我們內文
+    type: text
+  - name: name
+    label: 店名
+    type: string
+  - name: nameEn
+    label: 英文店名
+    type: string
+  - name: address
+    label: 地址
+    type: string
+  - name: phone
+    label: 電話
+    type: string
+  - name: tel
+    label: 電話連結
+    type: string
+    description: 例如 +88652385510。
+  - name: hours
+    label: 營業時間
+    type: string
+  - name: instagram
+    label: Instagram 連結
+    type: string
+  - name: ig
+    label: Instagram 帳號
+    type: string
+  - name: intro
+    label: 簡介
+    type: text

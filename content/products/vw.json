@@ -1,0 +1,155 @@
+[
+  {
+    "id": "P1055",
+    "name": "Volkswagen Golf 8 / GTI / R 跑車鋁合金踏板",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "interior",
+    "price": 12700,
+    "description": "材質：碳纖維\n安裝：含安裝\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1055.svg",
+      "/img/products/P1055-1.svg",
+      "/img/products/P1055-2.svg",
+      "/img/products/P1055-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1056",
+    "name": "Volkswagen Golf 8 / GTI / R 紅色陽極鋁撥片",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "paddle",
+    "price": 5400,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1056.svg",
+      "/img/products/P1056-1.svg",
+      "/img/products/P1056-2.svg",
+      "/img/products/P1056-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1057",
+    "name": "Volkswagen Golf 8 / GTI / R Stage 2 動力調校",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "tuning",
+    "price": 14700,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1057.svg",
+      "/img/products/P1057-1.svg",
+      "/img/products/P1057-2.svg",
+      "/img/products/P1057-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1058",
+    "name": "Volkswagen Golf 7 / GTI / R 賽道版加長撥片",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "paddle",
+    "price": 15100,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1058.svg",
+      "/img/products/P1058-1.svg",
+      "/img/products/P1058-2.svg",
+      "/img/products/P1058-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1059",
+    "name": "Volkswagen Golf 7 / GTI / R 閥門中尾段排氣",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "exhaust",
+    "price": 102800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1059.svg",
+      "/img/products/P1059-1.svg",
+      "/img/products/P1059-2.svg",
+      "/img/products/P1059-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1060",
+    "name": "Volkswagen Golf 7 / GTI / R 32 段高低軟硬可調避震",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "suspension",
+    "price": 21200,
+    "description": "調整：固定式\n降低幅度：約 25–35mm\n保固：一年\n適用車型：Golf 7 / GTI / R、Golf 8 / GTI / R",
+    "images": [
+      "/img/products/P1060.svg",
+      "/img/products/P1060-1.svg",
+      "/img/products/P1060-2.svg",
+      "/img/products/P1060-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1061",
+    "name": "Volkswagen Arteon 碳纖維加長撥片",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "paddle",
+    "price": 7300,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Arteon、Golf 8 / GTI / R",
+    "images": [
+      "/img/products/P1061.svg",
+      "/img/products/P1061-1.svg",
+      "/img/products/P1061-2.svg",
+      "/img/products/P1061-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1062",
+    "name": "Volkswagen Arteon 碳纖維密閉式進氣",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "intake",
+    "price": 21000,
+    "description": "材質：矽膠 + 鋁管\n增益：約 +5–10hp\n適用車型：Arteon",
+    "images": [
+      "/img/products/P1062.svg",
+      "/img/products/P1062-1.svg",
+      "/img/products/P1062-2.svg",
+      "/img/products/P1062-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1063",
+    "name": "Volkswagen Arteon 碳纖維尾飾管",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "exhaust",
+    "price": 53800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：無\n驗車：需確認法規\n適用車型：Arteon",
+    "images": [
+      "/img/products/P1063.svg",
+      "/img/products/P1063-1.svg",
+      "/img/products/P1063-2.svg",
+      "/img/products/P1063-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

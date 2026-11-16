@@ -440,11 +440,16 @@ function priceLabel(v) {
       }
     } catch (e) {}
     try {
-      const res = await fetch("content/products.json", { cache: "no-store" });
-      if (!res.ok) throw new Error("products");
-      const data = await res.json();
-      if (!Array.isArray(data)) throw new Error("products");
-      placeProducts(data);
+      const files = ["bmw","benz","audi","porsche","vw","toyota","lexus","honda","ferrari","lamborghini","other"];
+      const lists = await Promise.all(files.map(async id => {
+        try {
+          const res = await fetch("content/products/" + id + ".json", { cache: "no-store" });
+          if (!res.ok) return [];
+          const data = await res.json();
+          return Array.isArray(data) ? data : [];
+        } catch (e) { return []; }
+      }));
+      placeProducts(lists.reduce((all, list) => all.concat(list), []));
       loadState = products.length ? "ready" : "empty";
     } catch (e) {
       resetTaxonomy();

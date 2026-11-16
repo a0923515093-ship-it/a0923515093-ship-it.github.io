@@ -1,0 +1,155 @@
+[
+  {
+    "id": "P1037",
+    "name": "Audi A4 / S4 B9 單片鍛造輪圈 19 吋",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "wheel",
+    "price": 186500,
+    "description": "製程：兩片式鍛造\n顏色：消光黑\n單位：一組四顆\n適用車型：A4 / S4 B9、A3 / S3 8Y",
+    "images": [
+      "/img/products/P1037.svg",
+      "/img/products/P1037-1.svg",
+      "/img/products/P1037-2.svg",
+      "/img/products/P1037-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1038",
+    "name": "Audi A4 / S4 B9 前四活塞卡鉗套件",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "brake",
+    "price": 42600,
+    "description": "活塞數：4 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：A4 / S4 B9、A3 / S3 8Y",
+    "images": [
+      "/img/products/P1038.svg",
+      "/img/products/P1038-1.svg",
+      "/img/products/P1038-2.svg",
+      "/img/products/P1038-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1039",
+    "name": "Audi A4 / S4 B9 高流量空氣濾芯",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "intake",
+    "price": 37500,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：A4 / S4 B9",
+    "images": [
+      "/img/products/P1039.svg",
+      "/img/products/P1039-1.svg",
+      "/img/products/P1039-2.svg",
+      "/img/products/P1039-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1040",
+    "name": "Audi A3 / S3 8Y 賽道版加長撥片",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "paddle",
+    "price": 6400,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1040.svg",
+      "/img/products/P1040-1.svg",
+      "/img/products/P1040-2.svg",
+      "/img/products/P1040-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1041",
+    "name": "Audi A3 / S3 8Y 不鏽鋼全段排氣",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "exhaust",
+    "price": 109000,
+    "description": "材質：不鏽鋼 + 碳纖維尾飾\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1041.svg",
+      "/img/products/P1041-1.svg",
+      "/img/products/P1041-2.svg",
+      "/img/products/P1041-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1042",
+    "name": "Audi A3 / S3 8Y 後下巴擾流",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "aero",
+    "price": 50100,
+    "description": "材質：乾式碳纖維\n工法：預浸料熱壓\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1042.svg",
+      "/img/products/P1042-1.svg",
+      "/img/products/P1042-2.svg",
+      "/img/products/P1042-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1043",
+    "name": "Audi RS3 8Y 鋁合金鍛造撥片",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "paddle",
+    "price": 10800,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：RS3 8Y、A4 / S4 B9",
+    "images": [
+      "/img/products/P1043.svg",
+      "/img/products/P1043-1.svg",
+      "/img/products/P1043-2.svg",
+      "/img/products/P1043-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1044",
+    "name": "Audi RS3 8Y 碳纖維尾飾管",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "exhaust",
+    "price": 127800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：RS3 8Y",
+    "images": [
+      "/img/products/P1044.svg",
+      "/img/products/P1044-1.svg",
+      "/img/products/P1044-2.svg",
+      "/img/products/P1044-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1045",
+    "name": "Audi RS3 8Y Stage 2 動力調校",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "tuning",
+    "price": 39400,
+    "description": "服務型態：需預約\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：RS3 8Y",
+    "images": [
+      "/img/products/P1045.svg",
+      "/img/products/P1045-1.svg",
+      "/img/products/P1045-2.svg",
+      "/img/products/P1045-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "id": "P1073",
+    "name": "Lexus IS 300 / 350 磁吸式換檔撥片",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "paddle",
+    "price": 10900,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：IS 300 / 350",
+    "images": [
+      "/img/products/P1073.svg",
+      "/img/products/P1073-1.svg",
+      "/img/products/P1073-2.svg",
+      "/img/products/P1073-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1074",
+    "name": "Lexus IS 300 / 350 碳纖維尾飾管",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "exhaust",
+    "price": 61000,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：IS 300 / 350",
+    "images": [
+      "/img/products/P1074.svg",
+      "/img/products/P1074-1.svg",
+      "/img/products/P1074-2.svg",
+      "/img/products/P1074-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1075",
+    "name": "Lexus IS 300 / 350 前六活塞卡鉗套件",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "brake",
+    "price": 85800,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：IS 300 / 350、NX 2代",
+    "images": [
+      "/img/products/P1075.svg",
+      "/img/products/P1075-1.svg",
+      "/img/products/P1075-2.svg",
+      "/img/products/P1075-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1076",
+    "name": "Lexus NX 2代 紅色陽極鋁撥片",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "paddle",
+    "price": 11200,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：NX 2代",
+    "images": [
+      "/img/products/P1076.svg",
+      "/img/products/P1076-1.svg",
+      "/img/products/P1076-2.svg",
+      "/img/products/P1076-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1077",
+    "name": "Lexus NX 2代 Stage 2 動力調校",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "tuning",
+    "price": 40500,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：NX 2代、IS 300 / 350",
+    "images": [
+      "/img/products/P1077.svg",
+      "/img/products/P1077-1.svg",
+      "/img/products/P1077-2.svg",
+      "/img/products/P1077-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1078",
+    "name": "Lexus NX 2代 後下巴擾流",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "aero",
+    "price": 36700,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：NX 2代",
+    "images": [
+      "/img/products/P1078.svg",
+      "/img/products/P1078-1.svg",
+      "/img/products/P1078-2.svg",
+      "/img/products/P1078-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1079",
+    "name": "Lexus RC / RC F 馬力機實測服務",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "tuning",
+    "price": 23900,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：RC / RC F",
+    "images": [
+      "/img/products/P1079.svg",
+      "/img/products/P1079-1.svg",
+      "/img/products/P1079-2.svg",
+      "/img/products/P1079-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1080",
+    "name": "Lexus RC / RC F 磁吸式換檔撥片",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "paddle",
+    "price": 6200,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：RC / RC F",
+    "images": [
+      "/img/products/P1080.svg",
+      "/img/products/P1080-1.svg",
+      "/img/products/P1080-2.svg",
+      "/img/products/P1080-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1081",
+    "name": "Lexus RC / RC F 閥門中尾段排氣",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "exhaust",
+    "price": 144900,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：RC / RC F、IS 300 / 350",
+    "images": [
+      "/img/products/P1081.svg",
+      "/img/products/P1081-1.svg",
+      "/img/products/P1081-2.svg",
+      "/img/products/P1081-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

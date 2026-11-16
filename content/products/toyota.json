@@ -1,0 +1,155 @@
+[
+  {
+    "id": "P1064",
+    "name": "Toyota GR86 鍛造碳撥片 Pro",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "paddle",
+    "price": 5300,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：GR86、GR Corolla",
+    "images": [
+      "/img/products/P1064.svg",
+      "/img/products/P1064-1.svg",
+      "/img/products/P1064-2.svg",
+      "/img/products/P1064-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1065",
+    "name": "Toyota GR86 32 段高低軟硬可調避震",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "suspension",
+    "price": 14400,
+    "description": "調整：高低可調\n降低幅度：約 25–35mm\n保固：一年\n適用車型：GR86、GR Corolla",
+    "images": [
+      "/img/products/P1065.svg",
+      "/img/products/P1065-1.svg",
+      "/img/products/P1065-2.svg",
+      "/img/products/P1065-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1066",
+    "name": "Toyota GR86 馬力機實測服務",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "tuning",
+    "price": 16400,
+    "description": "服務型態：需預約\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：GR86",
+    "images": [
+      "/img/products/P1066.svg",
+      "/img/products/P1066-1.svg",
+      "/img/products/P1066-2.svg",
+      "/img/products/P1066-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1067",
+    "name": "Toyota GR Corolla 賽道版加長撥片",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "paddle",
+    "price": 14800,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：GR Corolla、GR86",
+    "images": [
+      "/img/products/P1067.svg",
+      "/img/products/P1067-1.svg",
+      "/img/products/P1067-2.svg",
+      "/img/products/P1067-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1068",
+    "name": "Toyota GR Corolla 32 段高低軟硬可調避震",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "suspension",
+    "price": 76900,
+    "description": "調整：32 段阻尼\n降低幅度：約 30–50mm\n保固：一年\n適用車型：GR Corolla",
+    "images": [
+      "/img/products/P1068.svg",
+      "/img/products/P1068-1.svg",
+      "/img/products/P1068-2.svg",
+      "/img/products/P1068-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1069",
+    "name": "Toyota GR Corolla 前四活塞卡鉗套件",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "brake",
+    "price": 15000,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：GR Corolla",
+    "images": [
+      "/img/products/P1069.svg",
+      "/img/products/P1069-1.svg",
+      "/img/products/P1069-2.svg",
+      "/img/products/P1069-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1070",
+    "name": "Toyota RAV4 5代 賽道版加長撥片",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "paddle",
+    "price": 13900,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：RAV4 5代",
+    "images": [
+      "/img/products/P1070.svg",
+      "/img/products/P1070-1.svg",
+      "/img/products/P1070-2.svg",
+      "/img/products/P1070-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1071",
+    "name": "Toyota RAV4 5代 前六活塞卡鉗套件",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "brake",
+    "price": 115800,
+    "description": "活塞數：—\n碟盤：380mm 兩片式\n適用：街道 / 賽道\n適用車型：RAV4 5代",
+    "images": [
+      "/img/products/P1071.svg",
+      "/img/products/P1071-1.svg",
+      "/img/products/P1071-2.svg",
+      "/img/products/P1071-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1072",
+    "name": "Toyota RAV4 5代 鈦合金當派管",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "exhaust",
+    "price": 107100,
+    "description": "材質：不鏽鋼 + 碳纖維尾飾\n閥門：無\n驗車：需確認法規\n適用車型：RAV4 5代、GR86",
+    "images": [
+      "/img/products/P1072.svg",
+      "/img/products/P1072-1.svg",
+      "/img/products/P1072-2.svg",
+      "/img/products/P1072-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

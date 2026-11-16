@@ -1,0 +1,410 @@
+[
+  {
+    "id": "P1001",
+    "name": "BMW 3系列 G20 碳纖維加長撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 11900,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1001.svg",
+      "/img/products/P1001-1.svg",
+      "/img/products/P1001-2.svg",
+      "/img/products/P1001-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1002",
+    "name": "BMW 3系列 G20 鋁合金鍛造撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 16100,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1002.svg",
+      "/img/products/P1002-1.svg",
+      "/img/products/P1002-2.svg",
+      "/img/products/P1002-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1003",
+    "name": "BMW 3系列 G20 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 7000,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1003.svg",
+      "/img/products/P1003-1.svg",
+      "/img/products/P1003-2.svg",
+      "/img/products/P1003-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1004",
+    "name": "BMW 3系列 G20 鍛造碳撥片 Pro",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 8100,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1004.svg",
+      "/img/products/P1004-1.svg",
+      "/img/products/P1004-2.svg",
+      "/img/products/P1004-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1005",
+    "name": "BMW 3系列 G20 賽道版加長撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 6600,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1005.svg",
+      "/img/products/P1005-1.svg",
+      "/img/products/P1005-2.svg",
+      "/img/products/P1005-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1006",
+    "name": "BMW 3系列 G20 紅色陽極鋁撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 13600,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1006.svg",
+      "/img/products/P1006-1.svg",
+      "/img/products/P1006-2.svg",
+      "/img/products/P1006-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1007",
+    "name": "BMW 3系列 G20 不鏽鋼全段排氣",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "exhaust",
+    "price": 167700,
+    "description": "材質：鈦合金\n閥門：無\n驗車：附檢測報告\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1007.svg",
+      "/img/products/P1007-1.svg",
+      "/img/products/P1007-2.svg",
+      "/img/products/P1007-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1008",
+    "name": "BMW 3系列 G20 32 段高低軟硬可調避震",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "suspension",
+    "price": 32500,
+    "description": "調整：高低可調\n降低幅度：約 25–35mm\n保固：兩年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1008.svg",
+      "/img/products/P1008-1.svg",
+      "/img/products/P1008-2.svg",
+      "/img/products/P1008-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1009",
+    "name": "BMW 3系列 G20 兩片式鍛造輪圈",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "wheel",
+    "price": 90000,
+    "description": "製程：旋壓鑄造\n顏色：槍灰\n單位：一組四顆\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1009.svg",
+      "/img/products/P1009-1.svg",
+      "/img/products/P1009-2.svg",
+      "/img/products/P1009-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1010",
+    "name": "BMW 3系列 G20 前四活塞卡鉗套件",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "brake",
+    "price": 67600,
+    "description": "活塞數：—\n碟盤：380mm 兩片式\n適用：街道 / 賽道\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1010.svg",
+      "/img/products/P1010-1.svg",
+      "/img/products/P1010-2.svg",
+      "/img/products/P1010-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1011",
+    "name": "BMW 3系列 G20 高流量空氣濾芯",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "intake",
+    "price": 16400,
+    "description": "材質：乾式碳纖維\n增益：依車況而定\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1011.svg",
+      "/img/products/P1011-1.svg",
+      "/img/products/P1011-2.svg",
+      "/img/products/P1011-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1012",
+    "name": "BMW 3系列 G20 變速箱 TCU 調校",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "tuning",
+    "price": 11700,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1012.svg",
+      "/img/products/P1012-1.svg",
+      "/img/products/P1012-2.svg",
+      "/img/products/P1012-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1013",
+    "name": "BMW 3系列 F30 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "paddle",
+    "price": 6400,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 F30",
+    "images": [
+      "/img/products/P1013.svg",
+      "/img/products/P1013-1.svg",
+      "/img/products/P1013-2.svg",
+      "/img/products/P1013-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1014",
+    "name": "BMW 3系列 F30 強化渦輪進氣管",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "intake",
+    "price": 4400,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：3系列 F30、3系列 G20",
+    "images": [
+      "/img/products/P1014.svg",
+      "/img/products/P1014-1.svg",
+      "/img/products/P1014-2.svg",
+      "/img/products/P1014-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1015",
+    "name": "BMW 3系列 F30 前六活塞卡鉗套件",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "brake",
+    "price": 10500,
+    "description": "活塞數：4 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：3系列 F30",
+    "images": [
+      "/img/products/P1015.svg",
+      "/img/products/P1015-1.svg",
+      "/img/products/P1015-2.svg",
+      "/img/products/P1015-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1016",
+    "name": "BMW M3 G80 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "paddle",
+    "price": 7200,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1016.svg",
+      "/img/products/P1016-1.svg",
+      "/img/products/P1016-2.svg",
+      "/img/products/P1016-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1017",
+    "name": "BMW M3 G80 單片鍛造輪圈 19 吋",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "wheel",
+    "price": 171900,
+    "description": "製程：旋壓鑄造\n顏色：槍灰\n單位：一組四顆\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1017.svg",
+      "/img/products/P1017-1.svg",
+      "/img/products/P1017-2.svg",
+      "/img/products/P1017-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1018",
+    "name": "BMW M3 G80 運動型降低彈簧",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "suspension",
+    "price": 29300,
+    "description": "調整：固定式\n降低幅度：約 30–50mm\n保固：兩年\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1018.svg",
+      "/img/products/P1018-1.svg",
+      "/img/products/P1018-2.svg",
+      "/img/products/P1018-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1019",
+    "name": "BMW 5系列 G30 高流量空氣濾芯",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "intake",
+    "price": 12800,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：5系列 G30、3系列 G20",
+    "images": [
+      "/img/products/P1019.svg",
+      "/img/products/P1019-1.svg",
+      "/img/products/P1019-2.svg",
+      "/img/products/P1019-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1020",
+    "name": "BMW 5系列 G30 馬力機實測服務",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "tuning",
+    "price": 16900,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：5系列 G30",
+    "images": [
+      "/img/products/P1020.svg",
+      "/img/products/P1020-1.svg",
+      "/img/products/P1020-2.svg",
+      "/img/products/P1020-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1021",
+    "name": "BMW 5系列 G30 鋁合金鍛造撥片",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "paddle",
+    "price": 13500,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：5系列 G30",
+    "images": [
+      "/img/products/P1021.svg",
+      "/img/products/P1021-1.svg",
+      "/img/products/P1021-2.svg",
+      "/img/products/P1021-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1022",
+    "name": "BMW X5 G05 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "paddle",
+    "price": 13200,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：X5 G05",
+    "images": [
+      "/img/products/P1022.svg",
+      "/img/products/P1022-1.svg",
+      "/img/products/P1022-2.svg",
+      "/img/products/P1022-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1023",
+    "name": "BMW X5 G05 中冷器升級套件",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "intake",
+    "price": 31600,
+    "description": "材質：棉質濾芯\n增益：依車況而定\n適用車型：X5 G05、3系列 G20",
+    "images": [
+      "/img/products/P1023.svg",
+      "/img/products/P1023-1.svg",
+      "/img/products/P1023-2.svg",
+      "/img/products/P1023-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1024",
+    "name": "BMW X5 G05 陶瓷來令片",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "brake",
+    "price": 120100,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：X5 G05、3系列 G20",
+    "images": [
+      "/img/products/P1024.svg",
+      "/img/products/P1024-1.svg",
+      "/img/products/P1024-2.svg",
+      "/img/products/P1024-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "P1100",
+    "name": "Lamborghini Huracán 賽道版加長撥片",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "paddle",
+    "price": 7800,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1100.svg",
+      "/img/products/P1100-1.svg",
+      "/img/products/P1100-2.svg",
+      "/img/products/P1100-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1101",
+    "name": "Lamborghini Huracán 碳纖維方向盤",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "interior",
+    "price": 13300,
+    "description": "材質：碳纖維\n安裝：DIY 可\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1101.svg",
+      "/img/products/P1101-1.svg",
+      "/img/products/P1101-2.svg",
+      "/img/products/P1101-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1102",
+    "name": "Lamborghini Huracán 碳纖維側裙",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "aero",
+    "price": 22400,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1102.svg",
+      "/img/products/P1102-1.svg",
+      "/img/products/P1102-2.svg",
+      "/img/products/P1102-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1103",
+    "name": "Lamborghini Urus 磁吸式換檔撥片",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "paddle",
+    "price": 11400,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：Urus",
+    "images": [
+      "/img/products/P1103.svg",
+      "/img/products/P1103-1.svg",
+      "/img/products/P1103-2.svg",
+      "/img/products/P1103-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1104",
+    "name": "Lamborghini Urus Stage 1 動力調校",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "tuning",
+    "price": 24700,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：Urus、Huracán",
+    "images": [
+      "/img/products/P1104.svg",
+      "/img/products/P1104-1.svg",
+      "/img/products/P1104-2.svg",
+      "/img/products/P1104-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1105",
+    "name": "Lamborghini Urus 鴨尾 / 尾翼",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "aero",
+    "price": 33300,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：Urus、Huracán",
+    "images": [
+      "/img/products/P1105.svg",
+      "/img/products/P1105-1.svg",
+      "/img/products/P1105-2.svg",
+      "/img/products/P1105-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  }
+]

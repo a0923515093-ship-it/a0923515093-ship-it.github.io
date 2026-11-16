@@ -1,0 +1,206 @@
+[
+  {
+    "id": "P1025",
+    "name": "Mercedes-Benz C-Class W206 磁吸式換檔撥片",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "paddle",
+    "price": 11700,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1025.svg",
+      "/img/products/P1025-1.svg",
+      "/img/products/P1025-2.svg",
+      "/img/products/P1025-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1026",
+    "name": "Mercedes-Benz C-Class W206 單片鍛造輪圈 19 吋",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "wheel",
+    "price": 90100,
+    "description": "製程：單片鍛造\n顏色：消光黑\n單位：一組四顆\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1026.svg",
+      "/img/products/P1026-1.svg",
+      "/img/products/P1026-2.svg",
+      "/img/products/P1026-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1027",
+    "name": "Mercedes-Benz C-Class W206 碳纖維密閉式進氣",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "intake",
+    "price": 37200,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1027.svg",
+      "/img/products/P1027-1.svg",
+      "/img/products/P1027-2.svg",
+      "/img/products/P1027-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1028",
+    "name": "Mercedes-Benz C-Class W205 跑車鋁合金踏板",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "interior",
+    "price": 11700,
+    "description": "材質：鋁合金\n安裝：含安裝\n適用車型：C-Class W205",
+    "images": [
+      "/img/products/P1028.svg",
+      "/img/products/P1028-1.svg",
+      "/img/products/P1028-2.svg",
+      "/img/products/P1028-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1029",
+    "name": "Mercedes-Benz C-Class W205 Stage 1 動力調校",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "tuning",
+    "price": 55000,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：C-Class W205",
+    "images": [
+      "/img/products/P1029.svg",
+      "/img/products/P1029-1.svg",
+      "/img/products/P1029-2.svg",
+      "/img/products/P1029-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1030",
+    "name": "Mercedes-Benz C-Class W205 鋁合金鍛造撥片",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "paddle",
+    "price": 14700,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：C-Class W205、C-Class W206",
+    "images": [
+      "/img/products/P1030.svg",
+      "/img/products/P1030-1.svg",
+      "/img/products/P1030-2.svg",
+      "/img/products/P1030-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1031",
+    "name": "Mercedes-Benz E-Class W213 高流量空氣濾芯",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "intake",
+    "price": 23900,
+    "description": "材質：乾式碳纖維\n增益：依車況而定\n適用車型：E-Class W213",
+    "images": [
+      "/img/products/P1031.svg",
+      "/img/products/P1031-1.svg",
+      "/img/products/P1031-2.svg",
+      "/img/products/P1031-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1032",
+    "name": "Mercedes-Benz E-Class W213 碳纖維側裙",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "aero",
+    "price": 43200,
+    "description": "材質：乾式碳纖維\n工法：預浸料熱壓\n適用車型：E-Class W213",
+    "images": [
+      "/img/products/P1032.svg",
+      "/img/products/P1032-1.svg",
+      "/img/products/P1032-2.svg",
+      "/img/products/P1032-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1033",
+    "name": "Mercedes-Benz E-Class W213 單片鍛造輪圈 20 吋",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "wheel",
+    "price": 46400,
+    "description": "製程：兩片式鍛造\n顏色：古銅金\n單位：一組四顆\n適用車型：E-Class W213、C-Class W206",
+    "images": [
+      "/img/products/P1033.svg",
+      "/img/products/P1033-1.svg",
+      "/img/products/P1033-2.svg",
+      "/img/products/P1033-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1034",
+    "name": "Mercedes-Benz CLA C118 跑車鋁合金踏板",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "interior",
+    "price": 37000,
+    "description": "材質：碳纖維 + 麂皮\n安裝：DIY 可\n適用車型：CLA C118、C-Class W206",
+    "images": [
+      "/img/products/P1034.svg",
+      "/img/products/P1034-1.svg",
+      "/img/products/P1034-2.svg",
+      "/img/products/P1034-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1035",
+    "name": "Mercedes-Benz CLA C118 不鏽鋼全段排氣",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "exhaust",
+    "price": 52400,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：CLA C118、C-Class W206",
+    "images": [
+      "/img/products/P1035.svg",
+      "/img/products/P1035-1.svg",
+      "/img/products/P1035-2.svg",
+      "/img/products/P1035-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1036",
+    "name": "Mercedes-Benz CLA C118 碳纖維加長撥片",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "paddle",
+    "price": 7900,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：CLA C118",
+    "images": [
+      "/img/products/P1036.svg",
+      "/img/products/P1036-1.svg",
+      "/img/products/P1036-2.svg",
+      "/img/products/P1036-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "id": "P1046",
+    "name": "Porsche 911 (992) 鍛造碳撥片 Pro",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "paddle",
+    "price": 9500,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：911 (992)、718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1046.svg",
+      "/img/products/P1046-1.svg",
+      "/img/products/P1046-2.svg",
+      "/img/products/P1046-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1047",
+    "name": "Porsche 911 (992) 強化渦輪進氣管",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "intake",
+    "price": 35900,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：911 (992)",
+    "images": [
+      "/img/products/P1047.svg",
+      "/img/products/P1047-1.svg",
+      "/img/products/P1047-2.svg",
+      "/img/products/P1047-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1048",
+    "name": "Porsche 911 (992) 兩片式鍛造輪圈",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "wheel",
+    "price": 79100,
+    "description": "製程：旋壓鑄造\n顏色：亮銀\n單位：一組四顆\n適用車型：911 (992)",
+    "images": [
+      "/img/products/P1048.svg",
+      "/img/products/P1048-1.svg",
+      "/img/products/P1048-2.svg",
+      "/img/products/P1048-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1049",
+    "name": "Porsche 718 Cayman / Boxster 鋁合金鍛造撥片",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "paddle",
+    "price": 7200,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：718 Cayman / Boxster、911 (992)",
+    "images": [
+      "/img/products/P1049.svg",
+      "/img/products/P1049-1.svg",
+      "/img/products/P1049-2.svg",
+      "/img/products/P1049-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1050",
+    "name": "Porsche 718 Cayman / Boxster 後下巴擾流",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "aero",
+    "price": 52200,
+    "description": "材質：乾式碳纖維\n工法：手糊\n適用車型：718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1050.svg",
+      "/img/products/P1050-1.svg",
+      "/img/products/P1050-2.svg",
+      "/img/products/P1050-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1051",
+    "name": "Porsche 718 Cayman / Boxster 強化渦輪進氣管",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "intake",
+    "price": 31500,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1051.svg",
+      "/img/products/P1051-1.svg",
+      "/img/products/P1051-2.svg",
+      "/img/products/P1051-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1052",
+    "name": "Porsche Macan 95B 鋁合金鍛造撥片",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "paddle",
+    "price": 15600,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：Macan 95B、911 (992)",
+    "images": [
+      "/img/products/P1052.svg",
+      "/img/products/P1052-1.svg",
+      "/img/products/P1052-2.svg",
+      "/img/products/P1052-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1053",
+    "name": "Porsche Macan 95B 電子可調避震套件",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "suspension",
+    "price": 43300,
+    "description": "調整：32 段阻尼\n降低幅度：約 25–35mm\n保固：兩年\n適用車型：Macan 95B、911 (992)",
+    "images": [
+      "/img/products/P1053.svg",
+      "/img/products/P1053-1.svg",
+      "/img/products/P1053-2.svg",
+      "/img/products/P1053-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1054",
+    "name": "Porsche Macan 95B 閥門中尾段排氣",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "exhaust",
+    "price": 101100,
+    "description": "材質：鈦合金\n閥門：無\n驗車：附檢測報告\n適用車型：Macan 95B",
+    "images": [
+      "/img/products/P1054.svg",
+      "/img/products/P1054-1.svg",
+      "/img/products/P1054-2.svg",
+      "/img/products/P1054-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  }
+]
