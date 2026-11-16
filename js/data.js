@@ -1,6 +1,11 @@
 // TODO: replace with official LINE link
 const LINE_URL = "https://line.me/";
 
+const SHEET = {
+  id: "1R-hDq19gxIxLNrIX9x6uhj_sKzFsWlpbbfA13LM_V3U",
+  tab: "商品"
+};
+
 window.STORE = {
   name: "伊豆精品",
   nameEn: "EDO TUNING",
@@ -13,7 +18,4 @@ window.STORE = {
   intro: "嘉義汽車改裝精品，商品與安裝歡迎 LINE 詢問。"
 };
 
-/* 商品資料。目前沒有上架商品。
-   日後每筆可包含 id、name、brand、type、image。
-   有 brand 或 type 時，商品頁會出現對應篩選。 */
 window.PRODUCTS = [];
