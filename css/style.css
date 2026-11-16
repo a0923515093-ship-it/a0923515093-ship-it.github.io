@@ -11,7 +11,10 @@ img{max-width:100%;display:block}
 .nav{display:flex;gap:4px;flex:1}
 .nav a{padding:8px 12px;border-radius:8px;font-size:.95rem;color:#c9ccd3;white-space:nowrap}
 .nav a.active,.nav a:hover{color:#fff;background:#1b1e25}
+.nav a.nav-shop{color:#fff;background:linear-gradient(135deg,var(--acc),#c41d13);font-weight:700}
+.nav a.nav-shop.active,.nav a.nav-shop:hover{color:#fff}
 .hdr-actions{display:flex;align-items:center;gap:10px}
+.hdr-search input{background:#15171c;border:1px solid var(--line);color:var(--txt);border-radius:999px;padding:8px 14px;width:190px}
 .burger{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:8px;font-size:1.2rem;padding:4px 10px;cursor:pointer}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 22px;border-radius:10px;font-weight:700;border:1px solid transparent;cursor:pointer;font-size:.95rem;font-family:inherit;text-align:center}
 .btn.line{background:var(--lineg);color:#fff;box-shadow:0 8px 24px rgba(6,199,85,.22)}
@@ -36,6 +39,19 @@ img{max-width:100%;display:block}
 .sec-h a{color:var(--acc);font-weight:600}
 .page-h{background:linear-gradient(120deg,#16090a,#0e1014 50%);border-bottom:1px solid var(--line);padding:46px 0 30px}.page-h h1{margin:0;font-size:2.1rem}.page-h p{color:var(--mut);margin:.4em 0 0}
 .page-h.slim{padding:26px 0 18px}.page-h.slim h1{font-size:1.7rem}
+.brand-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.brand-tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 16px;position:relative;overflow:hidden;transition:.2s}
+.brand-tile:after{content:"";position:absolute;right:-30px;bottom:-30px;width:90px;height:90px;border-radius:50%;background:var(--bc);opacity:.18;transition:.2s}
+.brand-tile b{display:block;font-size:1.1rem}.brand-tile span{color:var(--mut);font-size:.8rem}
+.brand-tile:hover{border-color:var(--bc);transform:translateY(-3px);color:inherit}.brand-tile:hover:after{opacity:.4}
+.type-strip{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.type-strip a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;background:#111318}.type-strip a:hover{border-color:var(--acc);color:var(--txt)}
+.crumbs{color:var(--mut);font-size:.88rem;margin-bottom:6px}.crumbs a:hover{color:var(--acc)}
+.fblock li a.dim{opacity:.4}
+.fblock .sub{margin:2px 0 6px 12px;border-left:1px dashed #3a3f4a;padding-left:6px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.toolbar input[type=search]{width:min(100%,420px);background:#15171c;border:1px solid var(--line);color:var(--txt);border-radius:999px;padding:10px 16px;font:inherit}
+.toolbar input[type=search]:focus{outline:none;border-color:var(--acc)}
+.active-tags{display:flex;gap:6px;flex-wrap:wrap}.active-tags span{background:#1f232b;border:1px solid #3a3f4a;padding:3px 12px;border-radius:999px;font-size:.85rem}
 .coming{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:64px 20px}
 .coming p{font-size:clamp(1.15rem,2.6vw,1.55rem);font-weight:800;margin:0 0 22px}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -78,8 +94,10 @@ img{max-width:100%;display:block}
 .copy{border-top:1px solid var(--line);padding:16px 20px;color:var(--mut);font-size:.8rem;margin-top:20px}
 .line-float{display:none}
 @media (max-width:1100px){
+  .hdr-search{display:none}
   .nav a{padding:8px 8px;font-size:.88rem}
   .pgrid{grid-template-columns:repeat(3,1fr)}
+  .brand-grid{grid-template-columns:repeat(4,1fr)}
 }
 @media (max-width:900px){
   .burger{display:block}
@@ -90,6 +108,7 @@ img{max-width:100%;display:block}
   .hero-in{padding-top:36px;padding-bottom:40px;gap:20px}
   .hero-panel{order:-1;min-height:160px}
   .pgrid,.shop:not(.shop-plain) .pgrid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
   .shop{grid-template-columns:1fr}
   .filter-toggle{display:inline-flex;justify-self:start}
   .filters{display:none;position:static}

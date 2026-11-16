@@ -79,11 +79,82 @@ function productsFromCsv(text) {
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const mapSearch = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(S.address);
   const mapEmbed = "https://www.google.com/maps?q=" + encodeURIComponent(S.address) + "&hl=zh-TW&z=16&output=embed";
+  const BASE_BRANDS = JSON.parse(JSON.stringify(window.BRANDS));
+  const BASE_TYPES = JSON.parse(JSON.stringify(window.TYPES));
 
   let products = [];
   let loadState = "loading";
-  let query = "";
-  let cat = "";
+
+  function norm(s) { return String(s || "").trim().toLowerCase().replace(/\s+/g, " "); }
+  function key(s) { return norm(s).replace(/[^a-z0-9\u4e00-\u9fff]+/g, ""); }
+  function slug(s) {
+    const n = norm(s).replace(/[^a-z0-9\u4e00-\u9fff]+/g, "-").replace(/^-+|-+$/g, "");
+    return "s-" + (n || "item");
+  }
+  function resetTaxonomy() {
+    window.BRANDS = BASE_BRANDS.map(b => ({ id: b.id, name: b.name, color: b.color, models: b.models.map(m => m.slice()) }));
+    window.TYPES = BASE_TYPES.map(t => ({ id: t.id, name: t.name }));
+  }
+  function findBrand(value) {
+    const k = key(value);
+    if (!k) return null;
+    const exact = BRANDS.find(b => key(b.name) === k || key(b.id) === k);
+    if (exact) return exact;
+    if (k.length < 3) return null;
+    const partial = BRANDS.filter(b => key(b.name).includes(k) || k.includes(key(b.name)));
+    return partial.length === 1 ? partial[0] : null;
+  }
+  function findType(value) {
+    const k = key(value);
+    if (!k) return null;
+    const exact = TYPES.find(t => key(t.name) === k || key(t.id) === k);
+    if (exact) return exact;
+    const partial = TYPES.filter(t => key(t.name).includes(k) || k.includes(key(t.name)));
+    return partial.length === 1 ? partial[0] : null;
+  }
+  function findModel(brand, value) {
+    const n = norm(value);
+    if (!brand || !n) return null;
+    const exact = brand.models.find(m => norm(m[0]) === n || norm(m[1]) === n);
+    if (exact) return exact;
+    const partial = brand.models.filter(m => norm(m[1]).includes(n) || n.includes(norm(m[1])));
+    return partial.length === 1 ? partial[0] : null;
+  }
+  function uniqueId(taken, base) {
+    let id = base, n = 2;
+    while (taken(id)) { id = base + "-" + n; n++; }
+    return id;
+  }
+  function placeProducts(rows) {
+    resetTaxonomy();
+    products = rows.map(row => {
+      let brand = row.brand ? findBrand(row.brand) : null;
+      if (row.brand && !brand) {
+        brand = { id: uniqueId(id => BRANDS.some(b => b.id === id), slug(row.brand)), name: row.brand, color: "#8d939e", models: [] };
+        BRANDS.push(brand);
+      }
+      let model = brand && row.model ? findModel(brand, row.model) : null;
+      if (brand && row.model && !model) {
+        model = [uniqueId(id => BRANDS.some(b => b.models.some(m => m[0] === id)), slug(row.model)), row.model];
+        brand.models.push(model);
+      }
+      let type = row.category ? findType(row.category) : null;
+      if (row.category && !type) {
+        type = { id: uniqueId(id => TYPES.some(t => t.id === id), slug(row.category)), name: row.category };
+        TYPES.push(type);
+      }
+      return {
+        name: row.name, price: row.price, note: row.note, photo: row.photo,
+        brandText: brand ? brand.name : row.brand,
+        modelText: model ? model[1] : row.model,
+        categoryText: type ? type.name : row.category,
+        brandId: brand ? brand.id : "",
+        modelId: model ? model[0] : "",
+        typeId: type ? type.id : ""
+      };
+    });
+    window.PRODUCTS = products;
+  }
 
   function sheetCsvUrl() {
     return "https://docs.google.com/spreadsheets/d/" + encodeURIComponent(SHEET.id) + "/gviz/tq?tqx=out:csv&sheet=" + encodeURIComponent(SHEET.tab);
@@ -100,9 +171,9 @@ function productsFromCsv(text) {
 
   function card(p) {
     const meta = [
-      p.brand ? `<p class="pmeta"><span>品牌</span> ${esc(p.brand)}</p>` : "",
-      p.model ? `<p class="pmeta"><span>適用車款</span> ${esc(p.model)}</p>` : "",
-      p.category ? `<p class="pmeta"><span>類別</span> ${esc(p.category)}</p>` : ""
+      p.brandText ? `<p class="pmeta"><span>品牌</span> ${esc(p.brandText)}</p>` : "",
+      p.modelText ? `<p class="pmeta"><span>適用車款</span> ${esc(p.modelText)}</p>` : "",
+      p.categoryText ? `<p class="pmeta"><span>類別</span> ${esc(p.categoryText)}</p>` : ""
     ].join("");
     const price = priceLabel(p.price);
     return `<article class="pcard">
@@ -121,42 +192,41 @@ function productsFromCsv(text) {
     return `<div class="coming"><p>商品陸續上架中，歡迎 LINE 詢問</p>${lineBtn("line-lg")}</div>`;
   }
 
-  function unique(list) {
-    const out = [];
-    list.forEach(v => { if (v && out.indexOf(v) < 0) out.push(v); });
-    return out;
+  function parseQ(qs) {
+    const o = {};
+    new URLSearchParams(qs || "").forEach((v, k) => { o[k] = v; });
+    return o;
   }
-
-  function visibleProducts() {
-    const q = query.trim().toLowerCase();
+  function qsOf(o) {
+    const u = new URLSearchParams();
+    Object.entries(o).forEach(([k, v]) => { if (v) u.set(k, v); });
+    const s = u.toString();
+    return s ? "?" + s : "";
+  }
+  function currentQ() {
+    return parseQ((location.hash.slice(1).split("?")[1]) || "");
+  }
+  function brandOf(id) { return BRANDS.find(b => b.id === id); }
+  function typeOf(id) { return TYPES.find(t => t.id === id); }
+  function modelName(brandId, modelId) {
+    const b = brandOf(brandId);
+    const m = b && b.models.find(x => x[0] === modelId);
+    return m ? m[1] : "";
+  }
+  function matched(q) {
+    const k = (q.q || "").trim().toLowerCase();
     return products.filter(p => {
-      if (cat && p.category !== cat) return false;
-      if (!q) return true;
-      return (p.name + "\n" + p.brand + "\n" + p.model).toLowerCase().includes(q);
+      if (q.brand && p.brandId !== q.brand) return false;
+      if (q.model && p.modelId !== q.model) return false;
+      if (q.type && p.typeId !== q.type) return false;
+      if (!k) return true;
+      return (p.name + "\n" + p.brandText + "\n" + p.modelText + "\n" + p.categoryText).toLowerCase().includes(k);
     });
   }
-
   function productList(list) {
-    if (!list.length) return `<div class="empty"><p>沒有符合的商品，歡迎 LINE 詢問</p>${lineBtn()}</div>`;
-    return `<div class="pgrid">${list.map(card).join("")}</div>`;
-  }
-
-  function catalog() {
-    const cats = unique(products.map(p => p.category));
-    const chips = cats.length ? `<div class="chips" role="group" aria-label="類別">${["", ...cats].map(c => `<button type="button" class="chip${c === cat ? " on" : ""}" data-cat="${esc(c)}">${esc(c || "全部")}</button>`).join("")}</div>` : "";
-    return `<div class="catalog">
-      <div class="catalog-bar">
-        <input id="productSearch" type="search" value="${esc(query)}" placeholder="搜尋品名、品牌或車款" aria-label="搜尋品名、品牌或車款" autocomplete="off">
-        ${chips}
-      </div>
-      <div id="productResults">${productList(visibleProducts())}</div>
-    </div>`;
-  }
-
-  function productBody() {
     if (loadState === "loading") return `<div class="coming"><p class="muted">載入中</p></div>`;
-    if (loadState !== "ready") return coming();
-    return catalog();
+    if (!list.length) return coming();
+    return `<div class="pgrid">${list.map(card).join("")}</div>`;
   }
 
   function bindImages(root) {
@@ -176,20 +246,21 @@ function productsFromCsv(text) {
   function paintResults() {
     const el = $("#productResults");
     if (!el) return;
-    el.innerHTML = productList(visibleProducts());
+    el.innerHTML = productList(matched(currentQ()));
     bindImages(el);
   }
 
   function bindCatalog() {
-    const input = $("#productSearch");
-    if (input) input.addEventListener("input", () => { query = input.value; paintResults(); });
-    document.querySelectorAll(".chip").forEach(btn => {
-      btn.addEventListener("click", () => {
-        cat = btn.getAttribute("data-cat") || "";
-        document.querySelectorAll(".chip").forEach(b => b.classList.toggle("on", (b.getAttribute("data-cat") || "") === cat));
-        paintResults();
-      });
+    const input = $("#shopSearch");
+    if (input) input.addEventListener("input", () => {
+      const q = currentQ();
+      q.q = input.value;
+      const next = "#/shop" + qsOf(q);
+      if (location.hash !== next) history.replaceState(null, "", next);
+      paintResults();
     });
+    const toggle = $(".filter-toggle");
+    if (toggle) toggle.addEventListener("click", () => document.body.classList.toggle("filters-open"));
     bindImages(app);
   }
 
@@ -206,22 +277,57 @@ function productsFromCsv(text) {
       </div></div>`;
   }
 
+  function brandNav() {
+    const count = id => products.filter(p => p.brandId === id).length;
+    return `<section class="wrap sec"><div class="sec-h"><h2>依車廠選購</h2><a href="#/shop">全部商品 →</a></div>
+      <div class="brand-grid">${BRANDS.map(b => `<a class="brand-tile" href="#/shop?brand=${encodeURIComponent(b.id)}" style="--bc:${b.color}"><b>${esc(b.name)}</b><span>${b.models.length} 款車型・${count(b.id)} 項商品</span></a>`).join("")}</div>
+      <div class="type-strip">${TYPES.map(t => `<a href="#/shop?type=${encodeURIComponent(t.id)}">${esc(t.name)}</a>`).join("")}</div>
+    </section>`;
+  }
+
   function home() {
     return `<section class="hero"><div class="wrap hero-in">
         <div class="hero-txt"><span class="kicker">嘉義市西區</span>
           <h1>伊豆精品<br><em>EDO TUNING</em></h1>
           <p>${esc(S.intro)}</p>
-          <div class="btns">${lineBtn()}<a class="btn ghost" href="#/contact">聯絡我們</a></div>
+          <div class="btns">${lineBtn()}<a class="btn ghost" href="#/shop">商品專區</a><a class="btn ghost" href="#/contact">聯絡我們</a></div>
         </div>
         <div class="hero-panel" aria-hidden="true"><b>伊豆精品</b><small>EDO TUNING</small></div>
       </div></section>
-      <section class="wrap sec"><div class="sec-h"><h2>店家資訊</h2></div>${locationBlock()}</section>
-      <section class="wrap sec"><div class="sec-h"><h2>商品</h2></div>${productBody()}</section>`;
+      ${brandNav()}
+      <section class="wrap sec"><div class="sec-h"><h2>店家資訊</h2></div>${locationBlock()}</section>`;
   }
 
-  function shop() {
-    return `<section class="page-h slim"><div class="wrap"><h1>商品</h1></div></section>
-      <section class="wrap sec">${productBody()}</section>`;
+  function shop(q) {
+    const b = q.brand && brandOf(q.brand);
+    const t = q.type && typeOf(q.type);
+    const mlabel = b && q.model ? modelName(q.brand, q.model) : "";
+    const list = matched(q);
+    const link = patch => esc("#/shop" + qsOf(Object.assign({}, q, patch)));
+    const crumbs = [`<a href="#/shop">商品專區</a>`];
+    if (b) crumbs.push(`<a href="${link({ model: "", type: "" })}">${esc(b.name)}</a>`);
+    if (mlabel) crumbs.push(`<a href="${link({ type: "" })}">${esc(mlabel)}</a>`);
+    if (t) crumbs.push(`<span>${esc(t.name)}</span>`);
+    const title = t ? t.name : mlabel ? mlabel : b ? b.name + " 改裝精品" : "商品專區";
+    const count = pred => products.filter(pred).length;
+    const tags = [b && b.name, mlabel, t && t.name].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join("");
+    return `<section class="page-h slim"><div class="wrap"><div class="crumbs">${crumbs.join(" › ")}</div><h1>${esc(title)}</h1>${list.length ? `<p>共 ${list.length} 項商品</p>` : ""}</div></section>
+      <section class="wrap shop">
+        <button class="btn ghost filter-toggle" type="button">篩選條件</button>
+        <aside class="filters">
+          <div class="fblock"><h4>車廠</h4><ul>${BRANDS.map(x => `<li><a class="${q.brand === x.id ? "on" : ""}" href="${link({ brand: q.brand === x.id ? "" : x.id, model: "" })}">${esc(x.name)}<span>${count(p => p.brandId === x.id)}</span></a>
+            ${q.brand === x.id ? `<ul class="sub">${x.models.map(m => `<li><a class="${q.model === m[0] ? "on" : ""}" href="${link({ model: q.model === m[0] ? "" : m[0] })}">${esc(m[1])}<span>${count(p => p.brandId === x.id && p.modelId === m[0])}</span></a></li>`).join("")}</ul>` : ""}</li>`).join("")}</ul></div>
+          <div class="fblock"><h4>商品類型</h4><ul>${TYPES.map(type => { const n = count(p => p.typeId === type.id && (!q.brand || p.brandId === q.brand) && (!q.model || p.modelId === q.model)); return `<li><a class="${q.type === type.id ? "on" : ""} ${n ? "" : "dim"}" href="${link({ type: q.type === type.id ? "" : type.id })}">${esc(type.name)}<span>${n}</span></a></li>`; }).join("")}</ul></div>
+          <a class="btn ghost full" href="#/shop">清除全部條件</a>
+        </aside>
+        <div class="results">
+          <div class="toolbar">
+            <input id="shopSearch" type="search" value="${esc(q.q || "")}" placeholder="搜尋品名、品牌或車款" aria-label="搜尋品名、品牌或車款" autocomplete="off">
+            <div class="active-tags">${tags}</div>
+          </div>
+          <div id="productResults">${productList(list)}</div>
+        </div>
+      </section>`;
   }
 
   function contact() {
@@ -231,20 +337,22 @@ function productsFromCsv(text) {
 
   function route(opts) {
     const h = location.hash.slice(1) || "/";
-    const path = h.split("?")[0];
+    const [path, qs] = h.split("?");
     const seg = path.split("/").filter(Boolean);
+    const q = parseQ(qs);
     let html;
     switch (seg[0]) {
       case undefined: html = home(); break;
-      case "shop": html = shop(); break;
+      case "shop": html = shop(q); break;
       case "contact": html = contact(); break;
       default: html = home();
     }
     app.innerHTML = html;
-    document.body.classList.remove("nav-open");
+    document.body.classList.remove("nav-open", "filters-open");
     const cur = seg[0] === "shop" || seg[0] === "contact" ? seg[0] : "";
     document.querySelectorAll("#nav a").forEach(a => {
-      a.classList.toggle("active", a.getAttribute("href") === (cur ? "#/" + cur : "#/"));
+      const href = a.getAttribute("href");
+      a.classList.toggle("active", href === (cur ? "#/" + cur : "#/"));
     });
     bindCatalog();
     if (!opts || !opts.keepScroll) window.scrollTo(0, 0);
@@ -256,17 +364,27 @@ function productsFromCsv(text) {
       if (!res.ok) throw new Error("sheet");
       const text = await res.text();
       if (!text || /^\s*</.test(text)) throw new Error("sheet");
-      products = productsFromCsv(text);
+      const rows = productsFromCsv(text);
+      placeProducts(rows);
       loadState = products.length ? "ready" : "empty";
     } catch (e) {
+      resetTaxonomy();
       products = [];
+      window.PRODUCTS = products;
       loadState = "empty";
     }
-    window.PRODUCTS = products;
     route({ keepScroll: true });
   }
 
   document.querySelectorAll("[data-line]").forEach(a => { a.href = LINE_URL; });
+  $("#hdrSearch").addEventListener("submit", e => {
+    e.preventDefault();
+    const value = new FormData(e.target).get("q");
+    const q = currentQ();
+    q.q = String(value || "").trim();
+    if (!location.hash.startsWith("#/shop")) { q.brand = ""; q.model = ""; q.type = ""; }
+    location.hash = "#/shop" + qsOf(q);
+  });
   $("#footInfo").innerHTML = `<a href="${esc(mapSearch)}" target="_blank" rel="noopener noreferrer">${esc(S.address)}</a><br>電話 <a href="tel:${esc(S.tel)}">${esc(S.phone)}</a><br>${esc(S.hours)}<br><a href="${esc(S.instagram)}" target="_blank" rel="noopener noreferrer">Instagram ${esc(S.ig)}</a>`;
   $("#nav").addEventListener("click", e => { if (e.target.closest("a")) document.body.classList.remove("nav-open"); });
   window.addEventListener("hashchange", () => route());
