@@ -1,10 +1,11 @@
-/* 毅德國際 範例資料 —— 所有商品、價格皆為範例（placeholder），正式上線時由後台/CSV 匯入，可擴充至上千筆 */
+/* 伊豆精品 範例資料 —— 所有商品、價格皆為範例（placeholder），正式上線時由後台/CSV 匯入，可擴充至上千筆 */
 window.STORE = {
-  name: "毅德國際", en: "YIDE Performance",
+  name: "伊豆精品",
   address: "嘉義市西區保福一路120之一號",
   phone: "05-238-5510", tel: "+88652385510",
   hours: "週一至週五 09:00–18:00",
-  ig: "yide_performance",
+  instagram: "https://www.instagram.com/edotuning",
+  ig: "@edotuning",
   mapEmbed: "https://www.google.com/maps?q=" + encodeURIComponent("嘉義市西區保福一路120之一號") + "&hl=zh-TW&z=16&output=embed",
   mapNav: "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent("嘉義市西區保福一路120之一號")
 };
@@ -83,7 +84,7 @@ window.CASES = [
       const specs = {}; Object.entries(t.specs).forEach(([k, v]) => specs[k] = pick(v));
       const compat = [mname]; if (rnd() > 0.5) { const o = b.models.find(m => m[0] !== mid); if (o) compat.push(o[1]); }
       P.push({
-        id: "YD" + (id++), brand: b.id, model: mid, type: tid,
+        id: "P" + (id++), brand: b.id, model: mid, type: tid,
         name: `${b.name} ${mname} ${name}`, price,
         orig: rnd() > 0.7 ? Math.round(price * 1.15 / 100) * 100 : null,
         stock: rnd() > 0.15, hot: rnd() > 0.8, rating: (4 + rnd()).toFixed(1),

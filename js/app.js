@@ -11,8 +11,8 @@
 
   /* ---------- 購物車（localStorage） ---------- */
   const cart = {
-    get() { try { return JSON.parse(localStorage.getItem("yd_cart") || "[]"); } catch (e) { return []; } },
-    set(c) { localStorage.setItem("yd_cart", JSON.stringify(c)); updateCount(); },
+    get() { try { return JSON.parse(localStorage.getItem("izu_cart") || "[]"); } catch (e) { return []; } },
+    set(c) { localStorage.setItem("izu_cart", JSON.stringify(c)); updateCount(); },
     add(id, q) { const c = this.get(); const i = c.find(x => x.id === id); i ? i.q += q : c.push({ id, q }); this.set(c); },
   };
   function updateCount() { $("#cartCount").textContent = cart.get().reduce((a, b) => a + b.q, 0); }
@@ -37,7 +37,7 @@
     <section class="hero"><div class="wrap hero-in">
       <div class="hero-txt"><span class="kicker">嘉義市西區・性能改裝工作室</span>
         <h1>讓每一台車<br><em>更快、更好開、更像你</em></h1>
-        <p>毅德國際 YIDE Performance 提供撥片、排氣、懸吊、輪圈、煞車到 ECU 調校的一站式改裝。上千項精品依「車廠 → 車型 → 商品類型」分類，線上選購、到店施工。</p>
+        <p>伊豆精品提供撥片、排氣、懸吊、輪圈、煞車到 ECU 調校的一站式改裝。上千項精品依「車廠 → 車型 → 商品類型」分類，線上選購、到店施工。</p>
         <div class="btns"><a class="btn primary" href="#/shop">進入商品專區 →</a><a class="btn ghost" href="#/services">施工項目</a><a class="btn ghost" href="#/contact">📍 到店地圖</a></div>
         <div class="hero-stats"><div><b>1000+</b><span>改裝精品（規劃）</span></div><div><b>10+</b><span>支援車廠</span></div><div><b>到店施工</b><span>嘉義市西區</span></div></div>
       </div>
@@ -53,9 +53,9 @@
       <div class="pgrid">${featured.map(card).join("")}</div></section>
 
     <section class="band"><div class="wrap sec two">
-      <div><span class="kicker">關於毅德</span><h2>嘉義在地的改裝夥伴</h2>
-        <p>毅德國際位於嘉義市西區，專注歐系與日系性能車改裝。從一組撥片到整車動力升級，我們都會先了解你的用車習慣，再建議最適合的方案，並在店內完成施工與調整。</p>
-        <a class="btn ghost" href="#/about">認識毅德 →</a></div>
+      <div><span class="kicker">關於伊豆精品</span><h2>嘉義在地的改裝夥伴</h2>
+        <p>伊豆精品位於嘉義市西區，專注歐系與日系性能車改裝。從一組撥片到整車動力升級，我們都會先了解你的用車習慣，再建議最適合的方案，並在店內完成施工與調整。</p>
+        <a class="btn ghost" href="#/about">認識伊豆精品 →</a></div>
       <div class="svc-mini">${SERVICES.slice(0, 6).map(s => `<a href="#/services">${svcIcon(s.icon)}<b>${s.t}</b></a>`).join("")}</div>
     </div></section>
 
@@ -67,10 +67,10 @@
   }
 
   function locationBlock() {
-    return `<div class="loc"><div class="map"><iframe title="毅德國際地圖" src="${S.mapEmbed}" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-      <div class="loc-info"><h3>毅德國際 YIDE Performance</h3>
-        <dl><dt>地址</dt><dd>${S.address}</dd><dt>電話</dt><dd><a href="tel:${S.tel}">${S.phone}</a></dd><dt>營業時間</dt><dd>${S.hours}</dd><dt>Instagram</dt><dd><a href="https://www.instagram.com/${S.ig}/" target="_blank" rel="noopener">@${S.ig}</a></dd></dl>
-        <div class="btns"><a class="btn primary" href="${S.mapNav}" target="_blank" rel="noopener">📍 Google 導航</a><a class="btn ghost" href="tel:${S.tel}">📞 撥打電話</a></div>
+    return `<div class="loc"><div class="map"><iframe title="伊豆精品地圖" src="${S.mapEmbed}" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="loc-info"><h3>伊豆精品</h3>
+        <dl><dt>地址</dt><dd>${S.address}</dd><dt>電話</dt><dd><a href="tel:${S.tel}">${S.phone}</a></dd><dt>營業時間</dt><dd>${S.hours}</dd><dt>Instagram</dt><dd><a class="ig-link" href="${S.instagram}" target="_blank" rel="noopener">${S.ig}</a></dd></dl>
+        <div class="btns"><a class="btn primary" href="${S.mapNav}" target="_blank" rel="noopener">📍 Google 導航</a><a class="btn ghost" href="tel:${S.tel}">📞 撥打電話</a><a class="btn ghost" href="${S.instagram}" target="_blank" rel="noopener">IG ${S.ig}</a></div>
         <p class="muted small">施工建議先來電預約，以便安排工位與備料。</p></div></div>`;
   }
 
@@ -80,11 +80,11 @@
   }
 
   function about() {
-    return `<section class="page-h"><div class="wrap"><span class="kicker">關於毅德</span><h1>毅德國際 YIDE Performance</h1><p>嘉義市西區・性能改裝與精品販售</p></div></section>
+    return `<section class="page-h"><div class="wrap"><span class="kicker">關於伊豆精品</span><h1>伊豆精品</h1><p>嘉義市西區・性能改裝與精品販售</p></div></section>
     <section class="wrap sec two">
-      <div><h2>我們的理念</h2><p>改裝不是把零件裝上去就好。毅德國際從車主的用車情境出發，日常通勤、山路或賽道，給出合適又合法的建議，並在店內完成安裝、調整與售後。</p>
+      <div><h2>我們的理念</h2><p>改裝不是把零件裝上去就好。伊豆精品從車主的用車情境出發，日常通勤、山路或賽道，給出合適又合法的建議，並在店內完成安裝、調整與售後。</p>
       <p>我們代理與銷售各式改裝精品，依車廠、車型分類管理，讓你在網站上就能找到自己車子適用的零件。</p>
-      <p class="muted small">（此段為範例文案，正式上線時可替換為毅德的真實故事、成立年份與團隊介紹。）</p></div>
+      <p class="muted small">（此段為範例文案，正式上線時可替換為伊豆精品的真實故事、成立年份與團隊介紹。）</p></div>
       <div class="about-cards"><div><b>原車適配</b><span>依車型確認相容性再出貨／施工</span></div><div><b>到店施工</b><span>專業工位與設備，施工後試車確認</span></div><div><b>售後保固</b><span>商品依原廠保固，施工問題回店處理</span></div><div><b>線上選購</b><span>上千項商品分類清楚，可線上付款</span></div></div>
     </section>
     <section class="wrap sec"><div class="sec-h"><h2>店家位置</h2></div>${locationBlock()}</section>`;
@@ -172,7 +172,7 @@
         <ul class="perks"><li>✔ 下單前可來電確認相容性：<a href="tel:${S.tel}">${S.phone}</a></li><li>✔ 支援信用卡、LINE Pay、ATM、超商取貨付款（上線時串接）</li><li>✔ 到店安裝地點：${S.address}</li></ul>
       </div></div>
     <div class="pd-tabs two"><div><h3>商品規格</h3><table class="spec">${Object.entries(Object.assign({ "車廠": b.name, "車型 / 底盤": modelName(p.brand, p.model), "商品類型": t.name }, p.specs)).map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join("")}</table></div>
-      <div><h3>商品說明</h3><p>此為範例商品說明。正式上線時，每項商品可放入詳細介紹、安裝說明、施工影片與實車照片。毅德國際提供到店安裝服務，安裝前會再次確認車輛年份與配備是否相容。</p><p class="muted small">※ 改裝零件是否符合驗車法規，請於購買前與我們確認。</p></div></div>
+      <div><h3>商品說明</h3><p>此為範例商品說明。正式上線時，每項商品可放入詳細介紹、安裝說明、施工影片與實車照片。伊豆精品提供到店安裝服務，安裝前會再次確認車輛年份與配備是否相容。</p><p class="muted small">※ 改裝零件是否符合驗車法規，請於購買前與我們確認。</p></div></div>
     <div class="sec-h"><h2>你可能也喜歡</h2></div><div class="pgrid">${rel.map(card).join("")}</div></section>`;
   }
 
@@ -205,11 +205,11 @@
   }
 
   function order(no) {
-    const o = JSON.parse(sessionStorage.getItem("yd_order") || "{}");
+    const o = JSON.parse(sessionStorage.getItem("izu_order") || "{}");
     return `<section class="wrap sec done-page"><div class="steps"><span class="done">1 購物車</span><span class="done">2 填寫資料與付款</span><span class="on">3 完成訂單</span></div>
     <div class="done-card"><div class="check">✓</div><h1>訂單已成立（範例）</h1><p>訂單編號 <b>${esc(no)}</b></p>
     <div class="row"><span>付款方式</span><b>${o.pay || "-"}</b></div><div class="row"><span>配送方式</span><b>${o.ship || "-"}</b></div><div class="row"><span>應付金額</span><b>${o.total ? money(o.total) : "-"}</b></div>
-    <p class="muted">正式上線後，系統將寄送訂單確認信，並由毅德國際來電確認安裝時間。<br>如有問題請來電 <a href="tel:${S.tel}">${S.phone}</a>（${S.hours}）</p>
+    <p class="muted">正式上線後，系統將寄送訂單確認信，並由伊豆精品來電確認安裝時間。<br>如有問題請來電 <a href="tel:${S.tel}">${S.phone}</a>（${S.hours}）</p>
     <div class="btns center"><a class="btn primary" href="#/shop">繼續購物</a><a class="btn ghost" href="#/">回首頁</a></div></div></section>`;
   }
 
@@ -247,11 +247,11 @@
       const pay = document.querySelector("input[name=pay]:checked").closest("label").querySelector("b").textContent;
       const sr = document.querySelector("input[name=ship]:checked"); const ship = sr.closest("label").querySelector("b").textContent;
       const total = +$("#totV").dataset.sub + (+sr.dataset.fee);
-      const no = "YD" + new Date().toISOString().slice(2, 10).replace(/-/g, "") + Math.floor(1000 + Math.random() * 9000);
-      sessionStorage.setItem("yd_order", JSON.stringify({ pay, ship, total })); cart.set([]); location.hash = "#/order/" + no;
+      const no = "P" + new Date().toISOString().slice(2, 10).replace(/-/g, "") + Math.floor(1000 + Math.random() * 9000);
+      sessionStorage.setItem("izu_order", JSON.stringify({ pay, ship, total })); cart.set([]); location.hash = "#/order/" + no;
     }
   };
 
-  $("#footInfo").innerHTML = `${S.address}<br>電話 <a href="tel:${S.tel}">${S.phone}</a><br>${S.hours}<br><a href="${S.mapNav}" target="_blank" rel="noopener">📍 Google 地圖導航</a><br><a href="https://www.instagram.com/${S.ig}/" target="_blank" rel="noopener">IG @${S.ig}</a>`;
+  $("#footInfo").innerHTML = `${S.address}<br>電話 <a href="tel:${S.tel}">${S.phone}</a><br>${S.hours}<br><a href="${S.mapNav}" target="_blank" rel="noopener">📍 Google 地圖導航</a><br><a class="ig-link" href="${S.instagram}" target="_blank" rel="noopener">Instagram ${S.ig}</a>`;
   window.addEventListener("hashchange", route); updateCount(); route();
 })();
