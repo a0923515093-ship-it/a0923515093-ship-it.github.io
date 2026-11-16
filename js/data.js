@@ -1,11 +1,3 @@
-// TODO: replace with official LINE link
-const LINE_URL = "https://line.me/";
-
-const SHEET = {
-  id: "1R-hDq19gxIxLNrIX9x6uhj_sKzFsWlpbbfA13LM_V3U",
-  tab: "商品"
-};
-
 window.STORE = {
   name: "伊豆精品",
   nameEn: "EDO TUNING",

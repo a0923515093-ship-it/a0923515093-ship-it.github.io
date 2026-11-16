@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "P1001",
+    "name": "BMW 3系列 G20 碳纖維加長撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 11900,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1001.svg",
+      "/img/products/P1001-1.svg",
+      "/img/products/P1001-2.svg",
+      "/img/products/P1001-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1002",
+    "name": "BMW 3系列 G20 鋁合金鍛造撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 16100,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1002.svg",
+      "/img/products/P1002-1.svg",
+      "/img/products/P1002-2.svg",
+      "/img/products/P1002-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1003",
+    "name": "BMW 3系列 G20 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 7000,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1003.svg",
+      "/img/products/P1003-1.svg",
+      "/img/products/P1003-2.svg",
+      "/img/products/P1003-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1004",
+    "name": "BMW 3系列 G20 鍛造碳撥片 Pro",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 8100,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1004.svg",
+      "/img/products/P1004-1.svg",
+      "/img/products/P1004-2.svg",
+      "/img/products/P1004-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1005",
+    "name": "BMW 3系列 G20 賽道版加長撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 6600,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1005.svg",
+      "/img/products/P1005-1.svg",
+      "/img/products/P1005-2.svg",
+      "/img/products/P1005-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1006",
+    "name": "BMW 3系列 G20 紅色陽極鋁撥片",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "paddle",
+    "price": 13600,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1006.svg",
+      "/img/products/P1006-1.svg",
+      "/img/products/P1006-2.svg",
+      "/img/products/P1006-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1007",
+    "name": "BMW 3系列 G20 不鏽鋼全段排氣",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "exhaust",
+    "price": 167700,
+    "description": "材質：鈦合金\n閥門：無\n驗車：附檢測報告\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1007.svg",
+      "/img/products/P1007-1.svg",
+      "/img/products/P1007-2.svg",
+      "/img/products/P1007-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1008",
+    "name": "BMW 3系列 G20 32 段高低軟硬可調避震",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "suspension",
+    "price": 32500,
+    "description": "調整：高低可調\n降低幅度：約 25–35mm\n保固：兩年\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1008.svg",
+      "/img/products/P1008-1.svg",
+      "/img/products/P1008-2.svg",
+      "/img/products/P1008-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1009",
+    "name": "BMW 3系列 G20 兩片式鍛造輪圈",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "wheel",
+    "price": 90000,
+    "description": "製程：旋壓鑄造\n顏色：槍灰\n單位：一組四顆\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1009.svg",
+      "/img/products/P1009-1.svg",
+      "/img/products/P1009-2.svg",
+      "/img/products/P1009-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1010",
+    "name": "BMW 3系列 G20 前四活塞卡鉗套件",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "brake",
+    "price": 67600,
+    "description": "活塞數：—\n碟盤：380mm 兩片式\n適用：街道 / 賽道\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1010.svg",
+      "/img/products/P1010-1.svg",
+      "/img/products/P1010-2.svg",
+      "/img/products/P1010-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1011",
+    "name": "BMW 3系列 G20 高流量空氣濾芯",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "intake",
+    "price": 16400,
+    "description": "材質：乾式碳纖維\n增益：依車況而定\n適用車型：3系列 G20、3系列 F30",
+    "images": [
+      "/img/products/P1011.svg",
+      "/img/products/P1011-1.svg",
+      "/img/products/P1011-2.svg",
+      "/img/products/P1011-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1012",
+    "name": "BMW 3系列 G20 變速箱 TCU 調校",
+    "brand": "bmw",
+    "model": "3系列 G20",
+    "category": "tuning",
+    "price": 11700,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：3系列 G20",
+    "images": [
+      "/img/products/P1012.svg",
+      "/img/products/P1012-1.svg",
+      "/img/products/P1012-2.svg",
+      "/img/products/P1012-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1013",
+    "name": "BMW 3系列 F30 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "paddle",
+    "price": 6400,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 F30",
+    "images": [
+      "/img/products/P1013.svg",
+      "/img/products/P1013-1.svg",
+      "/img/products/P1013-2.svg",
+      "/img/products/P1013-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1014",
+    "name": "BMW 3系列 F30 強化渦輪進氣管",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "intake",
+    "price": 4400,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：3系列 F30、3系列 G20",
+    "images": [
+      "/img/products/P1014.svg",
+      "/img/products/P1014-1.svg",
+      "/img/products/P1014-2.svg",
+      "/img/products/P1014-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1015",
+    "name": "BMW 3系列 F30 前六活塞卡鉗套件",
+    "brand": "bmw",
+    "model": "3系列 F30",
+    "category": "brake",
+    "price": 10500,
+    "description": "活塞數：4 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：3系列 F30",
+    "images": [
+      "/img/products/P1015.svg",
+      "/img/products/P1015-1.svg",
+      "/img/products/P1015-2.svg",
+      "/img/products/P1015-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1016",
+    "name": "BMW M3 G80 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "paddle",
+    "price": 7200,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1016.svg",
+      "/img/products/P1016-1.svg",
+      "/img/products/P1016-2.svg",
+      "/img/products/P1016-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1017",
+    "name": "BMW M3 G80 單片鍛造輪圈 19 吋",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "wheel",
+    "price": 171900,
+    "description": "製程：旋壓鑄造\n顏色：槍灰\n單位：一組四顆\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1017.svg",
+      "/img/products/P1017-1.svg",
+      "/img/products/P1017-2.svg",
+      "/img/products/P1017-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1018",
+    "name": "BMW M3 G80 運動型降低彈簧",
+    "brand": "bmw",
+    "model": "M3 G80",
+    "category": "suspension",
+    "price": 29300,
+    "description": "調整：固定式\n降低幅度：約 30–50mm\n保固：兩年\n適用車型：M3 G80",
+    "images": [
+      "/img/products/P1018.svg",
+      "/img/products/P1018-1.svg",
+      "/img/products/P1018-2.svg",
+      "/img/products/P1018-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1019",
+    "name": "BMW 5系列 G30 高流量空氣濾芯",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "intake",
+    "price": 12800,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：5系列 G30、3系列 G20",
+    "images": [
+      "/img/products/P1019.svg",
+      "/img/products/P1019-1.svg",
+      "/img/products/P1019-2.svg",
+      "/img/products/P1019-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1020",
+    "name": "BMW 5系列 G30 馬力機實測服務",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "tuning",
+    "price": 16900,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：5系列 G30",
+    "images": [
+      "/img/products/P1020.svg",
+      "/img/products/P1020-1.svg",
+      "/img/products/P1020-2.svg",
+      "/img/products/P1020-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1021",
+    "name": "BMW 5系列 G30 鋁合金鍛造撥片",
+    "brand": "bmw",
+    "model": "5系列 G30",
+    "category": "paddle",
+    "price": 13500,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：5系列 G30",
+    "images": [
+      "/img/products/P1021.svg",
+      "/img/products/P1021-1.svg",
+      "/img/products/P1021-2.svg",
+      "/img/products/P1021-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1022",
+    "name": "BMW X5 G05 磁吸式換檔撥片",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "paddle",
+    "price": 13200,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：X5 G05",
+    "images": [
+      "/img/products/P1022.svg",
+      "/img/products/P1022-1.svg",
+      "/img/products/P1022-2.svg",
+      "/img/products/P1022-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1023",
+    "name": "BMW X5 G05 中冷器升級套件",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "intake",
+    "price": 31600,
+    "description": "材質：棉質濾芯\n增益：依車況而定\n適用車型：X5 G05、3系列 G20",
+    "images": [
+      "/img/products/P1023.svg",
+      "/img/products/P1023-1.svg",
+      "/img/products/P1023-2.svg",
+      "/img/products/P1023-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1024",
+    "name": "BMW X5 G05 陶瓷來令片",
+    "brand": "bmw",
+    "model": "X5 G05",
+    "category": "brake",
+    "price": 120100,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：X5 G05、3系列 G20",
+    "images": [
+      "/img/products/P1024.svg",
+      "/img/products/P1024-1.svg",
+      "/img/products/P1024-2.svg",
+      "/img/products/P1024-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1025",
+    "name": "Mercedes-Benz C-Class W206 磁吸式換檔撥片",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "paddle",
+    "price": 11700,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1025.svg",
+      "/img/products/P1025-1.svg",
+      "/img/products/P1025-2.svg",
+      "/img/products/P1025-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1026",
+    "name": "Mercedes-Benz C-Class W206 單片鍛造輪圈 19 吋",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "wheel",
+    "price": 90100,
+    "description": "製程：單片鍛造\n顏色：消光黑\n單位：一組四顆\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1026.svg",
+      "/img/products/P1026-1.svg",
+      "/img/products/P1026-2.svg",
+      "/img/products/P1026-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1027",
+    "name": "Mercedes-Benz C-Class W206 碳纖維密閉式進氣",
+    "brand": "benz",
+    "model": "C-Class W206",
+    "category": "intake",
+    "price": 37200,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：C-Class W206",
+    "images": [
+      "/img/products/P1027.svg",
+      "/img/products/P1027-1.svg",
+      "/img/products/P1027-2.svg",
+      "/img/products/P1027-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1028",
+    "name": "Mercedes-Benz C-Class W205 跑車鋁合金踏板",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "interior",
+    "price": 11700,
+    "description": "材質：鋁合金\n安裝：含安裝\n適用車型：C-Class W205",
+    "images": [
+      "/img/products/P1028.svg",
+      "/img/products/P1028-1.svg",
+      "/img/products/P1028-2.svg",
+      "/img/products/P1028-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1029",
+    "name": "Mercedes-Benz C-Class W205 Stage 1 動力調校",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "tuning",
+    "price": 55000,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：C-Class W205",
+    "images": [
+      "/img/products/P1029.svg",
+      "/img/products/P1029-1.svg",
+      "/img/products/P1029-2.svg",
+      "/img/products/P1029-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1030",
+    "name": "Mercedes-Benz C-Class W205 鋁合金鍛造撥片",
+    "brand": "benz",
+    "model": "C-Class W205",
+    "category": "paddle",
+    "price": 14700,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：C-Class W205、C-Class W206",
+    "images": [
+      "/img/products/P1030.svg",
+      "/img/products/P1030-1.svg",
+      "/img/products/P1030-2.svg",
+      "/img/products/P1030-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1031",
+    "name": "Mercedes-Benz E-Class W213 高流量空氣濾芯",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "intake",
+    "price": 23900,
+    "description": "材質：乾式碳纖維\n增益：依車況而定\n適用車型：E-Class W213",
+    "images": [
+      "/img/products/P1031.svg",
+      "/img/products/P1031-1.svg",
+      "/img/products/P1031-2.svg",
+      "/img/products/P1031-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1032",
+    "name": "Mercedes-Benz E-Class W213 碳纖維側裙",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "aero",
+    "price": 43200,
+    "description": "材質：乾式碳纖維\n工法：預浸料熱壓\n適用車型：E-Class W213",
+    "images": [
+      "/img/products/P1032.svg",
+      "/img/products/P1032-1.svg",
+      "/img/products/P1032-2.svg",
+      "/img/products/P1032-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1033",
+    "name": "Mercedes-Benz E-Class W213 單片鍛造輪圈 20 吋",
+    "brand": "benz",
+    "model": "E-Class W213",
+    "category": "wheel",
+    "price": 46400,
+    "description": "製程：兩片式鍛造\n顏色：古銅金\n單位：一組四顆\n適用車型：E-Class W213、C-Class W206",
+    "images": [
+      "/img/products/P1033.svg",
+      "/img/products/P1033-1.svg",
+      "/img/products/P1033-2.svg",
+      "/img/products/P1033-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1034",
+    "name": "Mercedes-Benz CLA C118 跑車鋁合金踏板",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "interior",
+    "price": 37000,
+    "description": "材質：碳纖維 + 麂皮\n安裝：DIY 可\n適用車型：CLA C118、C-Class W206",
+    "images": [
+      "/img/products/P1034.svg",
+      "/img/products/P1034-1.svg",
+      "/img/products/P1034-2.svg",
+      "/img/products/P1034-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1035",
+    "name": "Mercedes-Benz CLA C118 不鏽鋼全段排氣",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "exhaust",
+    "price": 52400,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：CLA C118、C-Class W206",
+    "images": [
+      "/img/products/P1035.svg",
+      "/img/products/P1035-1.svg",
+      "/img/products/P1035-2.svg",
+      "/img/products/P1035-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1036",
+    "name": "Mercedes-Benz CLA C118 碳纖維加長撥片",
+    "brand": "benz",
+    "model": "CLA C118",
+    "category": "paddle",
+    "price": 7900,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：CLA C118",
+    "images": [
+      "/img/products/P1036.svg",
+      "/img/products/P1036-1.svg",
+      "/img/products/P1036-2.svg",
+      "/img/products/P1036-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1037",
+    "name": "Audi A4 / S4 B9 單片鍛造輪圈 19 吋",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "wheel",
+    "price": 186500,
+    "description": "製程：兩片式鍛造\n顏色：消光黑\n單位：一組四顆\n適用車型：A4 / S4 B9、A3 / S3 8Y",
+    "images": [
+      "/img/products/P1037.svg",
+      "/img/products/P1037-1.svg",
+      "/img/products/P1037-2.svg",
+      "/img/products/P1037-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1038",
+    "name": "Audi A4 / S4 B9 前四活塞卡鉗套件",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "brake",
+    "price": 42600,
+    "description": "活塞數：4 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：A4 / S4 B9、A3 / S3 8Y",
+    "images": [
+      "/img/products/P1038.svg",
+      "/img/products/P1038-1.svg",
+      "/img/products/P1038-2.svg",
+      "/img/products/P1038-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1039",
+    "name": "Audi A4 / S4 B9 高流量空氣濾芯",
+    "brand": "audi",
+    "model": "A4 / S4 B9",
+    "category": "intake",
+    "price": 37500,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：A4 / S4 B9",
+    "images": [
+      "/img/products/P1039.svg",
+      "/img/products/P1039-1.svg",
+      "/img/products/P1039-2.svg",
+      "/img/products/P1039-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1040",
+    "name": "Audi A3 / S3 8Y 賽道版加長撥片",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "paddle",
+    "price": 6400,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1040.svg",
+      "/img/products/P1040-1.svg",
+      "/img/products/P1040-2.svg",
+      "/img/products/P1040-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1041",
+    "name": "Audi A3 / S3 8Y 不鏽鋼全段排氣",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "exhaust",
+    "price": 109000,
+    "description": "材質：不鏽鋼 + 碳纖維尾飾\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1041.svg",
+      "/img/products/P1041-1.svg",
+      "/img/products/P1041-2.svg",
+      "/img/products/P1041-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1042",
+    "name": "Audi A3 / S3 8Y 後下巴擾流",
+    "brand": "audi",
+    "model": "A3 / S3 8Y",
+    "category": "aero",
+    "price": 50100,
+    "description": "材質：乾式碳纖維\n工法：預浸料熱壓\n適用車型：A3 / S3 8Y",
+    "images": [
+      "/img/products/P1042.svg",
+      "/img/products/P1042-1.svg",
+      "/img/products/P1042-2.svg",
+      "/img/products/P1042-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1043",
+    "name": "Audi RS3 8Y 鋁合金鍛造撥片",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "paddle",
+    "price": 10800,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：RS3 8Y、A4 / S4 B9",
+    "images": [
+      "/img/products/P1043.svg",
+      "/img/products/P1043-1.svg",
+      "/img/products/P1043-2.svg",
+      "/img/products/P1043-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1044",
+    "name": "Audi RS3 8Y 碳纖維尾飾管",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "exhaust",
+    "price": 127800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：RS3 8Y",
+    "images": [
+      "/img/products/P1044.svg",
+      "/img/products/P1044-1.svg",
+      "/img/products/P1044-2.svg",
+      "/img/products/P1044-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1045",
+    "name": "Audi RS3 8Y Stage 2 動力調校",
+    "brand": "audi",
+    "model": "RS3 8Y",
+    "category": "tuning",
+    "price": 39400,
+    "description": "服務型態：需預約\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：RS3 8Y",
+    "images": [
+      "/img/products/P1045.svg",
+      "/img/products/P1045-1.svg",
+      "/img/products/P1045-2.svg",
+      "/img/products/P1045-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1046",
+    "name": "Porsche 911 (992) 鍛造碳撥片 Pro",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "paddle",
+    "price": 9500,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：911 (992)、718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1046.svg",
+      "/img/products/P1046-1.svg",
+      "/img/products/P1046-2.svg",
+      "/img/products/P1046-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1047",
+    "name": "Porsche 911 (992) 強化渦輪進氣管",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "intake",
+    "price": 35900,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：911 (992)",
+    "images": [
+      "/img/products/P1047.svg",
+      "/img/products/P1047-1.svg",
+      "/img/products/P1047-2.svg",
+      "/img/products/P1047-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1048",
+    "name": "Porsche 911 (992) 兩片式鍛造輪圈",
+    "brand": "porsche",
+    "model": "911 (992)",
+    "category": "wheel",
+    "price": 79100,
+    "description": "製程：旋壓鑄造\n顏色：亮銀\n單位：一組四顆\n適用車型：911 (992)",
+    "images": [
+      "/img/products/P1048.svg",
+      "/img/products/P1048-1.svg",
+      "/img/products/P1048-2.svg",
+      "/img/products/P1048-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1049",
+    "name": "Porsche 718 Cayman / Boxster 鋁合金鍛造撥片",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "paddle",
+    "price": 7200,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：718 Cayman / Boxster、911 (992)",
+    "images": [
+      "/img/products/P1049.svg",
+      "/img/products/P1049-1.svg",
+      "/img/products/P1049-2.svg",
+      "/img/products/P1049-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1050",
+    "name": "Porsche 718 Cayman / Boxster 後下巴擾流",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "aero",
+    "price": 52200,
+    "description": "材質：乾式碳纖維\n工法：手糊\n適用車型：718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1050.svg",
+      "/img/products/P1050-1.svg",
+      "/img/products/P1050-2.svg",
+      "/img/products/P1050-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1051",
+    "name": "Porsche 718 Cayman / Boxster 強化渦輪進氣管",
+    "brand": "porsche",
+    "model": "718 Cayman / Boxster",
+    "category": "intake",
+    "price": 31500,
+    "description": "材質：乾式碳纖維\n增益：約 +5–10hp\n適用車型：718 Cayman / Boxster",
+    "images": [
+      "/img/products/P1051.svg",
+      "/img/products/P1051-1.svg",
+      "/img/products/P1051-2.svg",
+      "/img/products/P1051-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1052",
+    "name": "Porsche Macan 95B 鋁合金鍛造撥片",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "paddle",
+    "price": 15600,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：Macan 95B、911 (992)",
+    "images": [
+      "/img/products/P1052.svg",
+      "/img/products/P1052-1.svg",
+      "/img/products/P1052-2.svg",
+      "/img/products/P1052-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1053",
+    "name": "Porsche Macan 95B 電子可調避震套件",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "suspension",
+    "price": 43300,
+    "description": "調整：32 段阻尼\n降低幅度：約 25–35mm\n保固：兩年\n適用車型：Macan 95B、911 (992)",
+    "images": [
+      "/img/products/P1053.svg",
+      "/img/products/P1053-1.svg",
+      "/img/products/P1053-2.svg",
+      "/img/products/P1053-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1054",
+    "name": "Porsche Macan 95B 閥門中尾段排氣",
+    "brand": "porsche",
+    "model": "Macan 95B",
+    "category": "exhaust",
+    "price": 101100,
+    "description": "材質：鈦合金\n閥門：無\n驗車：附檢測報告\n適用車型：Macan 95B",
+    "images": [
+      "/img/products/P1054.svg",
+      "/img/products/P1054-1.svg",
+      "/img/products/P1054-2.svg",
+      "/img/products/P1054-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1055",
+    "name": "Volkswagen Golf 8 / GTI / R 跑車鋁合金踏板",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "interior",
+    "price": 12700,
+    "description": "材質：碳纖維\n安裝：含安裝\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1055.svg",
+      "/img/products/P1055-1.svg",
+      "/img/products/P1055-2.svg",
+      "/img/products/P1055-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1056",
+    "name": "Volkswagen Golf 8 / GTI / R 紅色陽極鋁撥片",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "paddle",
+    "price": 5400,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1056.svg",
+      "/img/products/P1056-1.svg",
+      "/img/products/P1056-2.svg",
+      "/img/products/P1056-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1057",
+    "name": "Volkswagen Golf 8 / GTI / R Stage 2 動力調校",
+    "brand": "vw",
+    "model": "Golf 8 / GTI / R",
+    "category": "tuning",
+    "price": 14700,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：Golf 8 / GTI / R、Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1057.svg",
+      "/img/products/P1057-1.svg",
+      "/img/products/P1057-2.svg",
+      "/img/products/P1057-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1058",
+    "name": "Volkswagen Golf 7 / GTI / R 賽道版加長撥片",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "paddle",
+    "price": 15100,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1058.svg",
+      "/img/products/P1058-1.svg",
+      "/img/products/P1058-2.svg",
+      "/img/products/P1058-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1059",
+    "name": "Volkswagen Golf 7 / GTI / R 閥門中尾段排氣",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "exhaust",
+    "price": 102800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：Golf 7 / GTI / R",
+    "images": [
+      "/img/products/P1059.svg",
+      "/img/products/P1059-1.svg",
+      "/img/products/P1059-2.svg",
+      "/img/products/P1059-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1060",
+    "name": "Volkswagen Golf 7 / GTI / R 32 段高低軟硬可調避震",
+    "brand": "vw",
+    "model": "Golf 7 / GTI / R",
+    "category": "suspension",
+    "price": 21200,
+    "description": "調整：固定式\n降低幅度：約 25–35mm\n保固：一年\n適用車型：Golf 7 / GTI / R、Golf 8 / GTI / R",
+    "images": [
+      "/img/products/P1060.svg",
+      "/img/products/P1060-1.svg",
+      "/img/products/P1060-2.svg",
+      "/img/products/P1060-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1061",
+    "name": "Volkswagen Arteon 碳纖維加長撥片",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "paddle",
+    "price": 7300,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Arteon、Golf 8 / GTI / R",
+    "images": [
+      "/img/products/P1061.svg",
+      "/img/products/P1061-1.svg",
+      "/img/products/P1061-2.svg",
+      "/img/products/P1061-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1062",
+    "name": "Volkswagen Arteon 碳纖維密閉式進氣",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "intake",
+    "price": 21000,
+    "description": "材質：矽膠 + 鋁管\n增益：約 +5–10hp\n適用車型：Arteon",
+    "images": [
+      "/img/products/P1062.svg",
+      "/img/products/P1062-1.svg",
+      "/img/products/P1062-2.svg",
+      "/img/products/P1062-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1063",
+    "name": "Volkswagen Arteon 碳纖維尾飾管",
+    "brand": "vw",
+    "model": "Arteon",
+    "category": "exhaust",
+    "price": 53800,
+    "description": "材質：SUS304 不鏽鋼\n閥門：無\n驗車：需確認法規\n適用車型：Arteon",
+    "images": [
+      "/img/products/P1063.svg",
+      "/img/products/P1063-1.svg",
+      "/img/products/P1063-2.svg",
+      "/img/products/P1063-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1064",
+    "name": "Toyota GR86 鍛造碳撥片 Pro",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "paddle",
+    "price": 5300,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：GR86、GR Corolla",
+    "images": [
+      "/img/products/P1064.svg",
+      "/img/products/P1064-1.svg",
+      "/img/products/P1064-2.svg",
+      "/img/products/P1064-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1065",
+    "name": "Toyota GR86 32 段高低軟硬可調避震",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "suspension",
+    "price": 14400,
+    "description": "調整：高低可調\n降低幅度：約 25–35mm\n保固：一年\n適用車型：GR86、GR Corolla",
+    "images": [
+      "/img/products/P1065.svg",
+      "/img/products/P1065-1.svg",
+      "/img/products/P1065-2.svg",
+      "/img/products/P1065-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1066",
+    "name": "Toyota GR86 馬力機實測服務",
+    "brand": "toyota",
+    "model": "GR86",
+    "category": "tuning",
+    "price": 16400,
+    "description": "服務型態：需預約\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：GR86",
+    "images": [
+      "/img/products/P1066.svg",
+      "/img/products/P1066-1.svg",
+      "/img/products/P1066-2.svg",
+      "/img/products/P1066-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1067",
+    "name": "Toyota GR Corolla 賽道版加長撥片",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "paddle",
+    "price": 14800,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：GR Corolla、GR86",
+    "images": [
+      "/img/products/P1067.svg",
+      "/img/products/P1067-1.svg",
+      "/img/products/P1067-2.svg",
+      "/img/products/P1067-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1068",
+    "name": "Toyota GR Corolla 32 段高低軟硬可調避震",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "suspension",
+    "price": 76900,
+    "description": "調整：32 段阻尼\n降低幅度：約 30–50mm\n保固：一年\n適用車型：GR Corolla",
+    "images": [
+      "/img/products/P1068.svg",
+      "/img/products/P1068-1.svg",
+      "/img/products/P1068-2.svg",
+      "/img/products/P1068-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1069",
+    "name": "Toyota GR Corolla 前四活塞卡鉗套件",
+    "brand": "toyota",
+    "model": "GR Corolla",
+    "category": "brake",
+    "price": 15000,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：GR Corolla",
+    "images": [
+      "/img/products/P1069.svg",
+      "/img/products/P1069-1.svg",
+      "/img/products/P1069-2.svg",
+      "/img/products/P1069-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1070",
+    "name": "Toyota RAV4 5代 賽道版加長撥片",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "paddle",
+    "price": 13900,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：RAV4 5代",
+    "images": [
+      "/img/products/P1070.svg",
+      "/img/products/P1070-1.svg",
+      "/img/products/P1070-2.svg",
+      "/img/products/P1070-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1071",
+    "name": "Toyota RAV4 5代 前六活塞卡鉗套件",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "brake",
+    "price": 115800,
+    "description": "活塞數：—\n碟盤：380mm 兩片式\n適用：街道 / 賽道\n適用車型：RAV4 5代",
+    "images": [
+      "/img/products/P1071.svg",
+      "/img/products/P1071-1.svg",
+      "/img/products/P1071-2.svg",
+      "/img/products/P1071-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1072",
+    "name": "Toyota RAV4 5代 鈦合金當派管",
+    "brand": "toyota",
+    "model": "RAV4 5代",
+    "category": "exhaust",
+    "price": 107100,
+    "description": "材質：不鏽鋼 + 碳纖維尾飾\n閥門：無\n驗車：需確認法規\n適用車型：RAV4 5代、GR86",
+    "images": [
+      "/img/products/P1072.svg",
+      "/img/products/P1072-1.svg",
+      "/img/products/P1072-2.svg",
+      "/img/products/P1072-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1073",
+    "name": "Lexus IS 300 / 350 磁吸式換檔撥片",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "paddle",
+    "price": 10900,
+    "description": "材質：鍛造碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：IS 300 / 350",
+    "images": [
+      "/img/products/P1073.svg",
+      "/img/products/P1073-1.svg",
+      "/img/products/P1073-2.svg",
+      "/img/products/P1073-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1074",
+    "name": "Lexus IS 300 / 350 碳纖維尾飾管",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "exhaust",
+    "price": 61000,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：IS 300 / 350",
+    "images": [
+      "/img/products/P1074.svg",
+      "/img/products/P1074-1.svg",
+      "/img/products/P1074-2.svg",
+      "/img/products/P1074-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1075",
+    "name": "Lexus IS 300 / 350 前六活塞卡鉗套件",
+    "brand": "lexus",
+    "model": "IS 300 / 350",
+    "category": "brake",
+    "price": 85800,
+    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：IS 300 / 350、NX 2代",
+    "images": [
+      "/img/products/P1075.svg",
+      "/img/products/P1075-1.svg",
+      "/img/products/P1075-2.svg",
+      "/img/products/P1075-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1076",
+    "name": "Lexus NX 2代 紅色陽極鋁撥片",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "paddle",
+    "price": 11200,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：NX 2代",
+    "images": [
+      "/img/products/P1076.svg",
+      "/img/products/P1076-1.svg",
+      "/img/products/P1076-2.svg",
+      "/img/products/P1076-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1077",
+    "name": "Lexus NX 2代 Stage 2 動力調校",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "tuning",
+    "price": 40500,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：NX 2代、IS 300 / 350",
+    "images": [
+      "/img/products/P1077.svg",
+      "/img/products/P1077-1.svg",
+      "/img/products/P1077-2.svg",
+      "/img/products/P1077-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1078",
+    "name": "Lexus NX 2代 後下巴擾流",
+    "brand": "lexus",
+    "model": "NX 2代",
+    "category": "aero",
+    "price": 36700,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：NX 2代",
+    "images": [
+      "/img/products/P1078.svg",
+      "/img/products/P1078-1.svg",
+      "/img/products/P1078-2.svg",
+      "/img/products/P1078-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1079",
+    "name": "Lexus RC / RC F 馬力機實測服務",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "tuning",
+    "price": 23900,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：RC / RC F",
+    "images": [
+      "/img/products/P1079.svg",
+      "/img/products/P1079-1.svg",
+      "/img/products/P1079-2.svg",
+      "/img/products/P1079-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1080",
+    "name": "Lexus RC / RC F 磁吸式換檔撥片",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "paddle",
+    "price": 6200,
+    "description": "材質：乾式碳纖維\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：RC / RC F",
+    "images": [
+      "/img/products/P1080.svg",
+      "/img/products/P1080-1.svg",
+      "/img/products/P1080-2.svg",
+      "/img/products/P1080-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1081",
+    "name": "Lexus RC / RC F 閥門中尾段排氣",
+    "brand": "lexus",
+    "model": "RC / RC F",
+    "category": "exhaust",
+    "price": 144900,
+    "description": "材質：鈦合金\n閥門：遙控閥門\n驗車：需確認法規\n適用車型：RC / RC F、IS 300 / 350",
+    "images": [
+      "/img/products/P1081.svg",
+      "/img/products/P1081-1.svg",
+      "/img/products/P1081-2.svg",
+      "/img/products/P1081-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1082",
+    "name": "Honda Civic Type R FK8 鋁合金鍛造撥片",
+    "brand": "honda",
+    "model": "Civic Type R FK8",
+    "category": "paddle",
+    "price": 16500,
+    "description": "材質：鍛造碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：Civic Type R FK8、Civic Type R FL5",
+    "images": [
+      "/img/products/P1082.svg",
+      "/img/products/P1082-1.svg",
+      "/img/products/P1082-2.svg",
+      "/img/products/P1082-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1083",
+    "name": "Honda Civic Type R FK8 電子可調避震套件",
+    "brand": "honda",
+    "model": "Civic Type R FK8",
+    "category": "suspension",
+    "price": 34500,
+    "description": "調整：高低可調\n降低幅度：約 25–35mm\n保固：兩年\n適用車型：Civic Type R FK8、Civic Type R FL5",
+    "images": [
+      "/img/products/P1083.svg",
+      "/img/products/P1083-1.svg",
+      "/img/products/P1083-2.svg",
+      "/img/products/P1083-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1084",
+    "name": "Honda Civic Type R FK8 碳纖維側裙",
+    "brand": "honda",
+    "model": "Civic Type R FK8",
+    "category": "aero",
+    "price": 55100,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：Civic Type R FK8、Civic Type R FL5",
+    "images": [
+      "/img/products/P1084.svg",
+      "/img/products/P1084-1.svg",
+      "/img/products/P1084-2.svg",
+      "/img/products/P1084-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1085",
+    "name": "Honda Civic Type R FL5 磁吸式換檔撥片",
+    "brand": "honda",
+    "model": "Civic Type R FL5",
+    "category": "paddle",
+    "price": 16200,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Civic Type R FL5、Civic Type R FK8",
+    "images": [
+      "/img/products/P1085.svg",
+      "/img/products/P1085-1.svg",
+      "/img/products/P1085-2.svg",
+      "/img/products/P1085-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1086",
+    "name": "Honda Civic Type R FL5 兩片式鍛造輪圈",
+    "brand": "honda",
+    "model": "Civic Type R FL5",
+    "category": "wheel",
+    "price": 64600,
+    "description": "製程：旋壓鑄造\n顏色：古銅金\n單位：一組四顆\n適用車型：Civic Type R FL5",
+    "images": [
+      "/img/products/P1086.svg",
+      "/img/products/P1086-1.svg",
+      "/img/products/P1086-2.svg",
+      "/img/products/P1086-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1087",
+    "name": "Honda Civic Type R FL5 運動型降低彈簧",
+    "brand": "honda",
+    "model": "Civic Type R FL5",
+    "category": "suspension",
+    "price": 86100,
+    "description": "調整：32 段阻尼\n降低幅度：約 30–50mm\n保固：兩年\n適用車型：Civic Type R FL5、Civic Type R FK8",
+    "images": [
+      "/img/products/P1087.svg",
+      "/img/products/P1087-1.svg",
+      "/img/products/P1087-2.svg",
+      "/img/products/P1087-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1088",
+    "name": "Honda Civic 11代 紅色陽極鋁撥片",
+    "brand": "honda",
+    "model": "Civic 11代",
+    "category": "paddle",
+    "price": 7500,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：Civic 11代",
+    "images": [
+      "/img/products/P1088.svg",
+      "/img/products/P1088-1.svg",
+      "/img/products/P1088-2.svg",
+      "/img/products/P1088-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1089",
+    "name": "Honda Civic 11代 碳纖維中控飾板",
+    "brand": "honda",
+    "model": "Civic 11代",
+    "category": "interior",
+    "price": 12600,
+    "description": "材質：鋁合金\n安裝：DIY 可\n適用車型：Civic 11代、Civic Type R FK8",
+    "images": [
+      "/img/products/P1089.svg",
+      "/img/products/P1089-1.svg",
+      "/img/products/P1089-2.svg",
+      "/img/products/P1089-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1090",
+    "name": "Honda Civic 11代 碳纖維側裙",
+    "brand": "honda",
+    "model": "Civic 11代",
+    "category": "aero",
+    "price": 41600,
+    "description": "材質：乾式碳纖維\n工法：手糊\n適用車型：Civic 11代",
+    "images": [
+      "/img/products/P1090.svg",
+      "/img/products/P1090-1.svg",
+      "/img/products/P1090-2.svg",
+      "/img/products/P1090-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1091",
+    "name": "Ferrari F8 Tributo 強化渦輪進氣管",
+    "brand": "ferrari",
+    "model": "F8 Tributo",
+    "category": "intake",
+    "price": 26200,
+    "description": "材質：矽膠 + 鋁管\n增益：依車況而定\n適用車型：F8 Tributo、296 GTB",
+    "images": [
+      "/img/products/P1091.svg",
+      "/img/products/P1091-1.svg",
+      "/img/products/P1091-2.svg",
+      "/img/products/P1091-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1092",
+    "name": "Ferrari F8 Tributo 鋁合金鍛造撥片",
+    "brand": "ferrari",
+    "model": "F8 Tributo",
+    "category": "paddle",
+    "price": 7100,
+    "description": "材質：6061 鋁合金\n安裝方式：免剪線直上\n保固：一年\n適用車型：F8 Tributo、296 GTB",
+    "images": [
+      "/img/products/P1092.svg",
+      "/img/products/P1092-1.svg",
+      "/img/products/P1092-2.svg",
+      "/img/products/P1092-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1093",
+    "name": "Ferrari F8 Tributo 兩片式鍛造輪圈",
+    "brand": "ferrari",
+    "model": "F8 Tributo",
+    "category": "wheel",
+    "price": 66100,
+    "description": "製程：兩片式鍛造\n顏色：亮銀\n單位：一組四顆\n適用車型：F8 Tributo",
+    "images": [
+      "/img/products/P1093.svg",
+      "/img/products/P1093-1.svg",
+      "/img/products/P1093-2.svg",
+      "/img/products/P1093-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1094",
+    "name": "Ferrari 296 GTB 32 段高低軟硬可調避震",
+    "brand": "ferrari",
+    "model": "296 GTB",
+    "category": "suspension",
+    "price": 58600,
+    "description": "調整：32 段阻尼\n降低幅度：約 25–35mm\n保固：一年\n適用車型：296 GTB、F8 Tributo",
+    "images": [
+      "/img/products/P1094.svg",
+      "/img/products/P1094-1.svg",
+      "/img/products/P1094-2.svg",
+      "/img/products/P1094-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1095",
+    "name": "Ferrari 296 GTB 碳纖維中控飾板",
+    "brand": "ferrari",
+    "model": "296 GTB",
+    "category": "interior",
+    "price": 16300,
+    "description": "材質：鋁合金\n安裝：DIY 可\n適用車型：296 GTB、F8 Tributo",
+    "images": [
+      "/img/products/P1095.svg",
+      "/img/products/P1095-1.svg",
+      "/img/products/P1095-2.svg",
+      "/img/products/P1095-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1096",
+    "name": "Ferrari 296 GTB 變速箱 TCU 調校",
+    "brand": "ferrari",
+    "model": "296 GTB",
+    "category": "tuning",
+    "price": 8400,
+    "description": "服務型態：需預約\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：296 GTB",
+    "images": [
+      "/img/products/P1096.svg",
+      "/img/products/P1096-1.svg",
+      "/img/products/P1096-2.svg",
+      "/img/products/P1096-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1097",
+    "name": "Ferrari Roma 兩片式鍛造輪圈",
+    "brand": "ferrari",
+    "model": "Roma",
+    "category": "wheel",
+    "price": 48500,
+    "description": "製程：旋壓鑄造\n顏色：槍灰\n單位：一組四顆\n適用車型：Roma、F8 Tributo",
+    "images": [
+      "/img/products/P1097.svg",
+      "/img/products/P1097-1.svg",
+      "/img/products/P1097-2.svg",
+      "/img/products/P1097-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1098",
+    "name": "Ferrari Roma 強化防傾桿組",
+    "brand": "ferrari",
+    "model": "Roma",
+    "category": "suspension",
+    "price": 37900,
+    "description": "調整：高低可調\n降低幅度：約 30–50mm\n保固：一年\n適用車型：Roma",
+    "images": [
+      "/img/products/P1098.svg",
+      "/img/products/P1098-1.svg",
+      "/img/products/P1098-2.svg",
+      "/img/products/P1098-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1099",
+    "name": "Ferrari Roma Stage 2 動力調校",
+    "brand": "ferrari",
+    "model": "Roma",
+    "category": "tuning",
+    "price": 34900,
+    "description": "服務型態：到店施工\n工時：約 1 個工作天\n還原：可還原原廠程式\n適用車型：Roma、F8 Tributo",
+    "images": [
+      "/img/products/P1099.svg",
+      "/img/products/P1099-1.svg",
+      "/img/products/P1099-2.svg",
+      "/img/products/P1099-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1100",
+    "name": "Lamborghini Huracán 賽道版加長撥片",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "paddle",
+    "price": 7800,
+    "description": "材質：6061 鋁合金\n安裝方式：原廠孔位直上\n保固：一年\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1100.svg",
+      "/img/products/P1100-1.svg",
+      "/img/products/P1100-2.svg",
+      "/img/products/P1100-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1101",
+    "name": "Lamborghini Huracán 碳纖維方向盤",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "interior",
+    "price": 13300,
+    "description": "材質：碳纖維\n安裝：DIY 可\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1101.svg",
+      "/img/products/P1101-1.svg",
+      "/img/products/P1101-2.svg",
+      "/img/products/P1101-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  },
+  {
+    "id": "P1102",
+    "name": "Lamborghini Huracán 碳纖維側裙",
+    "brand": "lamborghini",
+    "model": "Huracán",
+    "category": "aero",
+    "price": 22400,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：Huracán、Urus",
+    "images": [
+      "/img/products/P1102.svg",
+      "/img/products/P1102-1.svg",
+      "/img/products/P1102-2.svg",
+      "/img/products/P1102-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1103",
+    "name": "Lamborghini Urus 磁吸式換檔撥片",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "paddle",
+    "price": 11400,
+    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：Urus",
+    "images": [
+      "/img/products/P1103.svg",
+      "/img/products/P1103-1.svg",
+      "/img/products/P1103-2.svg",
+      "/img/products/P1103-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1104",
+    "name": "Lamborghini Urus Stage 1 動力調校",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "tuning",
+    "price": 24700,
+    "description": "服務型態：到店施工\n工時：約 2–4 小時\n還原：可還原原廠程式\n適用車型：Urus、Huracán",
+    "images": [
+      "/img/products/P1104.svg",
+      "/img/products/P1104-1.svg",
+      "/img/products/P1104-2.svg",
+      "/img/products/P1104-3.svg"
+    ],
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "P1105",
+    "name": "Lamborghini Urus 鴨尾 / 尾翼",
+    "brand": "lamborghini",
+    "model": "Urus",
+    "category": "aero",
+    "price": 33300,
+    "description": "材質：濕式碳纖維\n工法：預浸料熱壓\n適用車型：Urus、Huracán",
+    "images": [
+      "/img/products/P1105.svg",
+      "/img/products/P1105-1.svg",
+      "/img/products/P1105-2.svg",
+      "/img/products/P1105-3.svg"
+    ],
+    "featured": true,
+    "published": true
+  }
+]

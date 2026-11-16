@@ -1,84 +1,27 @@
-/* csv:start */
-function parseCsv(text) {
-  const src = String(text || "").replace(/^\uFEFF/, "");
-  const rows = [];
-  let row = [];
-  let field = "";
-  let quoted = false;
-  for (let i = 0; i < src.length; i++) {
-    const c = src[i];
-    if (quoted) {
-      if (c === '"') {
-        if (src[i + 1] === '"') { field += '"'; i++; }
-        else quoted = false;
-      } else field += c;
-    } else if (c === '"') {
-      quoted = true;
-    } else if (c === ",") {
-      row.push(field); field = "";
-    } else if (c === "\n" || c === "\r") {
-      if (c === "\r" && src[i + 1] === "\n") i++;
-      row.push(field); rows.push(row); row = []; field = "";
-    } else field += c;
-  }
-  if (field !== "" || row.length) { row.push(field); rows.push(row); }
-  return rows;
-}
-
-function cell(row, i) {
-  return String(row && row[i] != null ? row[i] : "").replace(/^[\s\u3000]+|[\s\u3000]+$/g, "");
-}
-
-function photoSrc(raw) {
-  const url = String(raw || "").trim();
-  if (!url) return "";
-  const file = url.match(/drive\.google\.com\/file\/d\/([^/?#]+)/i);
-  if (file) return "https://lh3.googleusercontent.com/d/" + file[1];
-  const id = url.match(/[?&]id=([^&#]+)/i);
-  if (id && /drive\.google\.com/i.test(url)) {
-    let decoded = id[1];
-    try { decoded = decodeURIComponent(id[1]); } catch (e) {}
-    return "https://lh3.googleusercontent.com/d/" + decoded;
-  }
-  if (/^https?:\/\//i.test(url)) return url;
-  return "";
-}
-
 function priceLabel(v) {
-  const s = String(v || "").trim();
+  if (v == null || v === "") return "";
+  if (typeof v === "number" && isFinite(v)) return "NT$ " + v.toLocaleString("zh-TW");
+  const s = String(v).trim();
   if (!s) return "";
   if (/^NT\$/i.test(s)) return s.replace(/^nt\$/i, "NT$");
+  const n = Number(String(s).replace(/,/g, ""));
+  if (String(s).replace(/,/g, "") !== "" && isFinite(n)) return "NT$ " + n.toLocaleString("zh-TW");
   return "NT$" + s;
 }
-
-function productsFromCsv(text) {
-  const rows = parseCsv(text);
-  const out = [];
-  for (let i = 1; i < rows.length; i++) {
-    const r = rows[i];
-    if (!r.some(c => String(c).trim() !== "")) continue;
-    if (cell(r, 0) !== "是") continue;
-    out.push({
-      name: cell(r, 1),
-      brand: cell(r, 2),
-      model: cell(r, 3),
-      category: cell(r, 4),
-      price: cell(r, 5),
-      note: cell(r, 6),
-      photo: photoSrc(cell(r, 7))
-    });
-  }
-  return out;
-}
-/* csv:end */
 
 (function () {
   const $ = s => document.querySelector(s);
   const app = $("#app");
-  const S = window.STORE;
+  let S = Object.assign({
+    lineUrl: "https://line.me/",
+    heroTitle: "讓每一台車",
+    heroHighlight: "更快、更好開、更像你",
+    heroSubtitle: "依「車廠 → 車型 → 商品類型」瀏覽撥片、排氣、懸吊、輪圈、煞車與電腦調校。嘉義汽車改裝精品，商品與安裝歡迎 LINE 詢問。",
+    aboutText: "嘉義汽車改裝精品，商品與安裝歡迎 LINE 詢問。"
+  }, window.STORE);
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const mapSearch = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(S.address);
-  const mapEmbed = "https://www.google.com/maps?q=" + encodeURIComponent(S.address) + "&hl=zh-TW&z=16&output=embed";
+  const mapSearch = () => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(S.address);
+  const mapEmbed = () => "https://www.google.com/maps?q=" + encodeURIComponent(S.address) + "&hl=zh-TW&z=16&output=embed";
   const BASE_BRANDS = JSON.parse(JSON.stringify(window.BRANDS));
   const BASE_TYPES = JSON.parse(JSON.stringify(window.TYPES));
 
@@ -127,7 +70,9 @@ function productsFromCsv(text) {
   }
   function placeProducts(rows) {
     resetTaxonomy();
-    products = rows.map((row, i) => {
+    products = [];
+    (Array.isArray(rows) ? rows : []).forEach((row, i) => {
+      if (!row || row.published === false) return;
       let brand = row.brand ? findBrand(row.brand) : null;
       if (row.brand && !brand) {
         brand = { id: uniqueId(id => BRANDS.some(b => b.id === id), slug(row.brand)), name: row.brand, color: "#8d939e", models: [] };
@@ -143,26 +88,28 @@ function productsFromCsv(text) {
         type = { id: uniqueId(id => TYPES.some(t => t.id === id), slug(row.category)), name: row.category };
         TYPES.push(type);
       }
-      return {
-        id: "p" + (i + 1),
-        name: row.name, price: row.price, note: row.note, photo: row.photo,
-        brandText: brand ? brand.name : row.brand,
-        modelText: model ? model[1] : row.model,
-        categoryText: type ? type.name : row.category,
+      const images = Array.isArray(row.images) ? row.images.filter(Boolean) : [];
+      products.push({
+        id: String(row.id || ("p" + (i + 1))),
+        name: row.name || "",
+        price: row.price == null || row.price === "" ? "" : row.price,
+        note: typeof row.description === "string" ? row.description : "",
+        photo: images[0] || "",
+        images,
+        featured: !!row.featured,
+        brandText: brand ? brand.name : (row.brand || ""),
+        modelText: model ? model[1] : (row.model || ""),
+        categoryText: type ? type.name : (row.category || ""),
         brandId: brand ? brand.id : "",
         modelId: model ? model[0] : "",
         typeId: type ? type.id : ""
-      };
+      });
     });
     window.PRODUCTS = products;
   }
 
-  function sheetCsvUrl() {
-    return "https://docs.google.com/spreadsheets/d/" + encodeURIComponent(SHEET.id) + "/gviz/tq?tqx=out:csv&sheet=" + encodeURIComponent(SHEET.tab);
-  }
-
   function lineBtn(extra) {
-    return `<a class="btn line${extra ? " " + extra : ""}" href="${esc(LINE_URL)}" target="_blank" rel="noopener noreferrer">LINE 詢問</a>`;
+    return `<a class="btn line${extra ? " " + extra : ""}" href="${esc(S.lineUrl)}" target="_blank" rel="noopener noreferrer">LINE 詢問</a>`;
   }
 
   function media(p) {
@@ -263,14 +210,20 @@ function productsFromCsv(text) {
     });
     const toggle = $(".filter-toggle");
     if (toggle) toggle.addEventListener("click", () => document.body.classList.toggle("filters-open"));
+    document.querySelectorAll(".thumbs img").forEach(img => {
+      img.addEventListener("click", () => {
+        const main = document.getElementById("mainImg");
+        if (main) main.src = img.getAttribute("data-full") || img.src;
+      });
+    });
     bindImages(app);
   }
 
   function locationBlock() {
-    return `<div class="loc"><div class="map"><iframe title="伊豆精品地圖" src="${esc(mapEmbed)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    return `<div class="loc"><div class="map"><iframe title="伊豆精品地圖" src="${esc(mapEmbed())}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       <div class="loc-info"><h3>${esc(S.name)}</h3><p class="muted">${esc(S.nameEn)}</p>
         <dl>
-          <dt>地址</dt><dd><a href="${esc(mapSearch)}" target="_blank" rel="noopener noreferrer">${esc(S.address)}</a></dd>
+          <dt>地址</dt><dd><a href="${esc(mapSearch())}" target="_blank" rel="noopener noreferrer">${esc(S.address)}</a></dd>
           <dt>電話</dt><dd><a href="tel:${esc(S.tel)}">${esc(S.phone)}</a></dd>
           <dt>營業時間</dt><dd>${esc(S.hours)}</dd>
           <dt>Instagram</dt><dd><a href="${esc(S.instagram)}" target="_blank" rel="noopener noreferrer">${esc(S.ig)}</a></dd>
@@ -310,14 +263,14 @@ function productsFromCsv(text) {
   }
 
   function home() {
-    const featured = products.slice(0, 8);
+    const featured = (products.some(p => p.featured) ? products.filter(p => p.featured) : products).slice(0, 8);
     const featuredBody = loadState === "loading"
       ? `<div class="coming"><p class="muted">載入中</p></div>`
       : featured.length ? `<div class="pgrid">${featured.map(card).join("")}</div>` : coming();
     return `<section class="hero"><div class="wrap hero-in">
         <div class="hero-txt"><span class="kicker">嘉義市西區</span>
-          <h1>讓每一台車<br><em>更快、更好開、更像你</em></h1>
-          <p>依「車廠 → 車型 → 商品類型」瀏覽撥片、排氣、懸吊、輪圈、煞車與電腦調校。${esc(S.intro)}</p>
+          <h1>${esc(S.heroTitle || "")}<br><em>${esc(S.heroHighlight || "")}</em></h1>
+          <p>${esc(S.heroSubtitle || S.intro || "")}</p>
           <div class="btns"><a class="btn primary" href="#/shop">進入商品專區 →</a><a class="btn ghost" href="#/services">施工項目</a><a class="btn ghost" href="#/contact">我們在哪裡</a></div>
           <div class="hero-stats"><div><b>內容準備中</b><span>精選商品</span></div><div><b>內容準備中</b><span>施工案例</span></div><div><b>嘉義市西區</b><span>到店洽詢</span></div></div>
         </div>
@@ -333,14 +286,14 @@ function productsFromCsv(text) {
       </div></section>
       <section class="wrap sec"><div class="sec-h"><h2>施工案例</h2><a href="#/cases">全部案例 →</a></div>
         <div class="case-grid">${Array.from({ length: 3 }, caseCard).join("")}</div></section>
-      <section class="wrap sec"><div class="sec-h"><h2>我們在哪裡</h2><a href="${esc(mapSearch)}" target="_blank" rel="noopener noreferrer">Google 地圖 →</a></div>
+      <section class="wrap sec"><div class="sec-h"><h2>我們在哪裡</h2><a href="${esc(mapSearch())}" target="_blank" rel="noopener noreferrer">Google 地圖 →</a></div>
         ${locationBlock()}</section>`;
   }
 
   function about() {
     return `<section class="page-h"><div class="wrap"><span class="kicker">關於我們</span><h1>關於伊豆精品</h1><p>嘉義市西區・汽車改裝精品</p></div></section>
       <section class="wrap sec two">
-        <div><h2>我們的理念</h2><p>${esc(S.intro)}</p><p class="muted">內容準備中</p></div>
+        <div><h2>我們的理念</h2><p>${esc(S.aboutText || S.intro || "")}</p><p class="muted">內容準備中</p></div>
         <div class="about-cards">
           <div><b>車廠與車型</b><span>內容準備中</span></div>
           <div><b>到店洽詢</b><span>歡迎先用 LINE 或電話預約。</span></div>
@@ -371,6 +324,13 @@ function productsFromCsv(text) {
       <section class="wrap sec"><div class="case-grid">${Array.from({ length: CASE_SLOTS }, caseCard).join("")}</div></section>`;
   }
 
+  function gallery(p) {
+    const imgs = p.images && p.images.length ? p.images : (p.photo ? [p.photo] : []);
+    if (!imgs.length) return `<div class="case-ph">${esc(p.name)}</div>`;
+    const thumbs = imgs.length > 1 ? `<div class="thumbs">${imgs.map(src => `<img src="${esc(src)}" alt="" data-full="${esc(src)}">`).join("")}</div>` : "";
+    return `<img id="mainImg" src="${esc(imgs[0])}" alt="${esc(p.name)}" data-name="${esc(p.name)}">${thumbs}`;
+  }
+
   function productPage(id) {
     const p = products.find(x => x.id === id);
     if (!p) return `<section class="page-h slim"><div class="wrap"><h1>商品</h1></div></section><section class="wrap sec">${coming()}</section>`;
@@ -383,7 +343,7 @@ function productsFromCsv(text) {
     if (p.typeId) crumbs.push(`<a href="#/shop?type=${encodeURIComponent(p.typeId)}">${esc(p.categoryText)}</a>`);
     return `<section class="wrap sec"><div class="crumbs">${crumbs.join(" › ")}</div>
       <div class="pd">
-        <div class="gallery">${p.photo ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" data-name="${esc(p.name)}">` : `<div class="case-ph">${esc(p.name)}</div>`}</div>
+        <div class="gallery">${gallery(p)}</div>
         <div class="pd-info">
           <h1>${esc(p.name)}</h1>
           ${price ? `<div class="pd-price"><b>${esc(price)}</b></div>` : ""}
@@ -465,14 +425,26 @@ function productsFromCsv(text) {
     if (!opts || !opts.keepScroll) window.scrollTo(0, 0);
   }
 
-  async function loadSheet() {
+  function applyChrome() {
+    document.querySelectorAll("[data-line]").forEach(a => { a.href = S.lineUrl; });
+    const search = mapSearch();
+    $("#footInfo").innerHTML = `<a href="${esc(search)}" target="_blank" rel="noopener noreferrer">${esc(S.address)}</a><br>電話 <a href="tel:${esc(S.tel)}">${esc(S.phone)}</a><br>${esc(S.hours)}<br><a href="${esc(S.instagram)}" target="_blank" rel="noopener noreferrer">Instagram ${esc(S.ig)}</a>`;
+  }
+
+  async function loadContent() {
     try {
-      const res = await fetch(sheetCsvUrl(), { cache: "no-store" });
-      if (!res.ok) throw new Error("sheet");
-      const text = await res.text();
-      if (!text || /^\s*</.test(text)) throw new Error("sheet");
-      const rows = productsFromCsv(text);
-      placeProducts(rows);
+      const res = await fetch("content/site.json", { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && typeof data === "object" && !Array.isArray(data)) S = Object.assign({}, S, data);
+      }
+    } catch (e) {}
+    try {
+      const res = await fetch("content/products.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("products");
+      const data = await res.json();
+      if (!Array.isArray(data)) throw new Error("products");
+      placeProducts(data);
       loadState = products.length ? "ready" : "empty";
     } catch (e) {
       resetTaxonomy();
@@ -480,10 +452,10 @@ function productsFromCsv(text) {
       window.PRODUCTS = products;
       loadState = "empty";
     }
+    applyChrome();
     route({ keepScroll: true });
   }
 
-  document.querySelectorAll("[data-line]").forEach(a => { a.href = LINE_URL; });
   $("#hdrSearch").addEventListener("submit", e => {
     e.preventDefault();
     const value = new FormData(e.target).get("q");
@@ -492,9 +464,9 @@ function productsFromCsv(text) {
     if (!location.hash.startsWith("#/shop")) { q.brand = ""; q.model = ""; q.type = ""; }
     location.hash = "#/shop" + qsOf(q);
   });
-  $("#footInfo").innerHTML = `<a href="${esc(mapSearch)}" target="_blank" rel="noopener noreferrer">${esc(S.address)}</a><br>電話 <a href="tel:${esc(S.tel)}">${esc(S.phone)}</a><br>${esc(S.hours)}<br><a href="${esc(S.instagram)}" target="_blank" rel="noopener noreferrer">Instagram ${esc(S.ig)}</a>`;
+  applyChrome();
   $("#nav").addEventListener("click", e => { if (e.target.closest("a")) document.body.classList.remove("nav-open"); });
   window.addEventListener("hashchange", () => route());
   route();
-  loadSheet();
+  loadContent();
 })();
