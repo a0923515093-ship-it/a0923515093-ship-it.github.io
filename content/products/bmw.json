@@ -1,17 +1,14 @@
 [
   {
     "id": "P1001",
-    "name": "BMW 3系列 G20 碳纖維加長撥片",
+    "name": "Madtrace 碳纖維磁吸撥片",
     "brand": "bmw",
     "model": "3系列 G20",
     "category": "paddle",
-    "price": 11900,
-    "description": "材質：乾式碳纖維\n安裝方式：免剪線直上\n保固：一年\n適用車型：3系列 G20",
+    "price": 8800,
+    "description": "材質：乾式碳纖維\n安裝方式：直上\n保固：一年\n適用車型：3系列 G20",
     "images": [
-      "/img/products/P1001.svg",
-      "/img/products/P1001-1.svg",
-      "/img/products/P1001-2.svg",
-      "/img/products/P1001-3.svg"
+      "/img/products/IMG_0897.jpeg"
     ],
     "featured": false,
     "published": true
