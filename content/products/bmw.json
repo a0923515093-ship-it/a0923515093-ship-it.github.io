@@ -389,17 +389,18 @@
   },
   {
     "id": "P1024",
-    "name": "BMW X5 G05 陶瓷來令片",
+    "name": "BMW X5M F85 全新蠍管中尾段",
     "brand": "bmw",
-    "model": "X5 G05",
-    "category": "brake",
-    "price": 120100,
-    "description": "活塞數：6 活塞\n碟盤：355mm\n適用：街道 / 賽道\n適用車型：X5 G05、3系列 G20",
+    "model": "X5 F85",
+    "category": "exhaust",
+    "price": 238000,
+    "description": "適用：街道 / 賽道\n適用車型：X5 F85",
     "images": [
-      "/img/products/P1024.svg",
-      "/img/products/P1024-1.svg",
-      "/img/products/P1024-2.svg",
-      "/img/products/P1024-3.svg"
+      "/img/products/IMG_1882.jpeg",
+      "/img/products/IMG_1883.jpeg",
+      "/img/products/IMG_1881.jpeg",
+      "/img/products/IMG_1886.jpeg",
+      "/img/products/IMG_1887.jpeg"
     ],
     "featured": false,
     "published": true
